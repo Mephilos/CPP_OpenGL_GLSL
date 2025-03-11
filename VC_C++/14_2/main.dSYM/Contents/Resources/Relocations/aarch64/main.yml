@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/taehosim/Dev/Study/VC_C++/14_2/main'
+relocations:     []
+...
