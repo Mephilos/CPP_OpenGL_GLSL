@@ -20,18 +20,8 @@ public:
     }
     
     ~Resource(){
-<<<<<<< HEAD
-        std::cout << 
-    }
-}
-
-
-
-
-=======
         std::cout << "Resource constructed" << std::endl;
     }
 };
->>>>>>> f726c4f (야간작성코드스마트포인터)
 
 #endif /* Resource_h */
