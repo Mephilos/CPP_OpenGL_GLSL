@@ -1,11 +1,4 @@
-//
-//  Resource.h
-//  C++
-//
-//  Created by TAEHO SIM on 3/11/25.
-//
-#ifndef Resource_h
-#define Resource_h
+#pragma once
 
 #include <iostream>
 
@@ -20,18 +13,7 @@ public:
     }
     
     ~Resource(){
-<<<<<<< HEAD
-        std::cout << 
-    }
-}
-
-
-
-
-=======
         std::cout << "Resource constructed" << std::endl;
     }
 };
->>>>>>> f726c4f (야간작성코드스마트포인터)
 
-#endif /* Resource_h */

@@ -26,7 +26,13 @@
 		26D3D91C2D801FE70006866A /* Exceptions for "C++" folder in "C++" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+<<<<<<< HEAD
 				15_SmartPtr/Prectice_Code/main2.cpp,
+=======
+				15_SmartPtr/15_1/AutoPtr.h,
+				15_SmartPtr/15_1/main.cpp,
+				15_SmartPtr/15_1/Resource.h,
+>>>>>>> f726c4f (야간작성코드스마트포인터)
 			);
 			target = 2692EC702D73FDA7009D7500 /* C++ */;
 		};
