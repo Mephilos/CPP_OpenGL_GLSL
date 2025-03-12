@@ -1,4 +1,11 @@
-#pragma once
+//
+//  Resource.h
+//  C++
+//
+//  Created by TAEHO SIM on 3/11/25.
+//
+#ifndef Resource_h
+#define Resource_h
 
 #include <iostream>
 
@@ -13,7 +20,8 @@ public:
     }
     
     ~Resource(){
-        std::cout << "Resource constructed" << std::endl;
+        std::cout << "Resource destroyed" << std::endl;
     }
 };
 
+#endif /* Resource_h */

@@ -20,7 +20,7 @@ public:
     }
     
     ~Resource(){
-        std::cout << "Resource constructed" << std::endl;
+        std::cout << "Resource destructor" << std::endl;
     }
 };
 
