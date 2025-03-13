@@ -22,9 +22,23 @@
 		2692EC712D73FDA7009D7500 /* C++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C++"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		26EB7E382D82626D00B2E6F2 /* Exceptions for "C++" folder in "C++" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				15_SmartPtr/15_5/main.cpp,
+				15_SmartPtr/15_5/Resource.h,
+			);
+			target = 2692EC702D73FDA7009D7500 /* C++ */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		265997792D7F2B2C005BC656 /* C++ */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				26EB7E382D82626D00B2E6F2 /* Exceptions for "C++" folder in "C++" target */,
+			);
 			path = "C++";
 			sourceTree = "<group>";
 		};
