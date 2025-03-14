@@ -23,11 +23,10 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		26EB7EAE2D82789C00B2E6F2 /* Exceptions for "C++" folder in "C++" target */ = {
+		26BBD0222D830B0600DAEED0 /* Exceptions for "C++" folder in "C++" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				15_SmartPtr/15_6shared_ptr/main.cpp,
-				15_SmartPtr/15_6shared_ptr/Resource.h,
+				Sample_bms/sample2.cpp,
 			);
 			target = 2692EC702D73FDA7009D7500 /* C++ */;
 		};
@@ -37,7 +36,7 @@
 		265997792D7F2B2C005BC656 /* C++ */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				26EB7EAE2D82789C00B2E6F2 /* Exceptions for "C++" folder in "C++" target */,
+				26BBD0222D830B0600DAEED0 /* Exceptions for "C++" folder in "C++" target */,
 			);
 			path = "C++";
 			sourceTree = "<group>";
