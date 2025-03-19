@@ -5,7 +5,7 @@
 using namespace std;
 
 
-struct MyStruct
+class MyStruct
 {};
 
 void func(MyStruct& s)
