@@ -6,15 +6,6 @@
 
 using namespace std;
 
-enum class Menu
-{
-    MAKE,
-    DEPOSIT,
-    WITHDRAW,
-    INQUIRE,
-    EXIT,
-};
-
 class Account // 계좌에 관련된 클래스
 {
 private:
@@ -39,7 +30,7 @@ public:
             balance += money;
     }
 
-    bool withraw(int money)
+    bool withdraw(int money)
     {
         if (money > balance)
         {
@@ -56,6 +47,10 @@ public:
     {
         return accID;
     }
+    int getBalance() const
+    {
+        return balance;
+    }
 };
 
 class BankingSystem
@@ -64,40 +59,21 @@ private:
     std::vector<Account> accounts;
 
 public:
-
-    bool isValidName(const string& name)
+    bool isValidName(const string &name)
     {
-        for(char c : name)
+        for (char c : name)
         {
-            if(!isalpha(static_cast<unsigned char>(c)) && !isspace(static_cast<unsigned char>(c)))
+            if (!isalpha(static_cast<unsigned char>(c)) && !isspace(static_cast<unsigned char>(c)))
             {
                 return false;
             }
         }
         return true;
     }
-    void makeAccount()
+
+    std::string inputName()
     {
-        int id;
-        int balance;
-        std::string name;
-
-        while (true)
-        {
-            cout << "Enter your disired ID number: ";
-            if (cin >> id) // int외 fail() else로 넘어감
-            {
-                break;
-            }
-            else
-            {
-                cout << "Invalid input. Please enter a valid numeric Account ID" << endl;
-                cin.clear();                                             // cin 의 오류 초기화
-                cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // 입력 버퍼 정리
-            }
-        }
-        cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); //정상 입력 후 루프문 탈출시 남아있는 개행 문자 제거
-
+        string name;
         while (true)
         {
             cout << "Customer Name: ";
@@ -108,7 +84,7 @@ public:
                 cout << "The name is empty. Please enter it again" << endl;
                 continue;
             }
-            if(isValidName(name))
+            if (isValidName(name))
             {
                 break;
             }
@@ -117,64 +93,123 @@ public:
                 cout << "Please enter a name that contains only English letters and spaces" << endl;
             }
         }
-
-        cout << "Initial Balance: ";
-        while(!(cin >> balance))
+        return name;
+    }
+    int inputID()
+    {
+        int accID;
+        while (true)
+        {
+            cout << "Enter your desired ID number: ";
+            if (cin >> accID) // int외 fail() else로 넘어감
+            {
+                break;
+            }
+            else
+            {
+                cout << "Invalid input. Please enter a valid numeric Account ID" << endl;
+                cin.clear();                                                   // cin 의 오류 초기화
+                cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // 입력 버퍼 정리
+            }
+        }
+        cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // 정상 입력 후 루프문 탈출시 남아있는 개행 문자 제거
+        return accID;
+    }
+    int inputBalance()
+    {
+        int money;
+        cout << "Balance: ";
+        while (!(cin >> money))
         {
             cout << "Invalid input. Please enter a valid numeric balance" << endl;
             cin.clear();
-            cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n');
+            cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         }
+        return money;
+    }
+    // TODO:std::Optional은 여기선 이질적인 느낌이라 일단 보류
+    // 중복 체크 루프 함수
+    Account *findAccountByID(int &id)
+    {
+        for (auto &account : accounts)
+        {
+            if (account.getID() == id)
+                return &account;
+        }
+        return nullptr;
+    }
+
+    void makeAccount()
+    {
+        int id;
+        while (true)
+        {
+            id = inputID();
+            if (findAccountByID(id) != nullptr)
+            {
+                cout << "Duplicate ID. Please Re-enter" << endl;
+                continue;
+            }
+            break;
+        }
+
+        string name = inputName();
+        int balance = inputBalance();
+
         // 생성시 어카운트 객체 추가
         accounts.emplace_back(id, balance, name);
         cout << "Account Creation Completed" << endl;
         cout << "ID: " << id << endl;
-        cout << "name: " << name << endl;
+        cout << "Balance: " << balance << endl;
+        cout << "Name: " << name << endl;
     }
 
     void depositMoney()
     {
-        int id, money;
-        cout << "Enter your Account ID for deposit: ";
-        cin >> id;
-        cout << "Enter deposit amount: ";
-        cin >> money;
+        int id = inputID();
+        int money = inputBalance();
 
-        for (auto &account : accounts)
+        Account* account = findAccountByID(id);
+        
+        
+        if(account)
         {
-            if (account.getID() == id)
-            {
-                account.deposit(money);
-                cout << "Deposit Completed" << endl;
-                return;
-            }
+            account->deposit(money);
+            cout << "Deposit Completed" << endl;
+            cout << "Current Balance: " << account->getBalance() << endl;
         }
-        cout << "Account not found" << endl;
+        else
+        {
+            cout << "Account not found" <<endl;
+        }
     }
 
     void withdrawMoney()
     {
         int id, money;
         cout << "Enter your Account ID for withdrawal: ";
-        cin >> id;
+        id = inputID();
         cout << "Enter withdrawal amount: ";
-        cin >> money;
-        for (auto &account : accounts)
+        money = inputBalance();
+
+        Account* account = findAccountByID(id);
+        
+        if(account)
         {
-            if (account.getID() == id)
+            if(account -> withdraw(money))
             {
-                if (account.withraw(money))
-                {
-                    cout << "Withdrawal Completed" << endl;
-                }
-                else
-                {
-                    cout << "Insufficient funds" << endl;
-                }
-                return;
+                cout << "Withdrawal Completed" << endl;
             }
+            else
+            {
+                cout << "Insufficient funds" << endl;
+            }
+            cout << "Current Balance: " << account -> getBalance() << endl;
         }
-        cout << "Account not found" << endl;
+        else
+        {
+            cout << "Account not found" << endl;
+        }
     }
     void printAllAccounts() const
     {
@@ -187,16 +222,14 @@ public:
         {
             account.display();
             cout << "--------------------------" << endl;
-            ;
         }
     }
-    
 };
 
 void showMenu()
 {
     cout << endl;
-    cout << "--------- Banking System Meun ---------" << endl;
+    cout << "--------- Banking System Menㅕ ---------" << endl;
     cout << "1. Make Account" << endl;
     cout << "2. Deposit Money" << endl;
     cout << "3. Withdraw Money" << endl;
