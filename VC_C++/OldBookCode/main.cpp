@@ -78,12 +78,13 @@ public:
         std::getline(cin, name);
 
 
-        //TODO:여기다가 직접 입금하는거 만들꺼임.
+        
         cout << "Initial Balance: ";
+        //그냥 입력
         cin >> balance;
-        //생성시 어카운트 객체 추가하는 방식
+        //생성시 어카운트 객체 추가
         accounts.emplace_back(id, balance, name);
-        cout << "Account Created" << endl;
+        cout << "Account Creation Completed" << endl;
     }
 
     void depositMoney()
@@ -91,8 +92,100 @@ public:
         int id, money;
         cout << "Enter your Account ID for deposit: ";
         cin >> id;
-        
+        cout << "Enter deposit amount: ";
+        cin >> money;
+
+        for (auto& account : accounts)
+        {
+            if(account.getID() == id)
+            {
+                account.deposit(money);
+                cout<< "Deposit Completed" << endl;
+                return;
+            }
+        }
+        cout << "Account not found" << endl;
+    }
+
+    void withdrawMoney()
+    {
+        int id, money ;
+        cout << "Enter your Account ID for withdrawal: ";
+        cin >> id;
+        cout << "Enter withdrawal amount: ";
+        cin >> money;
+        for (auto& account : accounts)
+        {
+            if(account.getID() == id)
+            {
+                if(account.withraw(money))
+                {
+                    cout<< "Withdrawal Completed" << endl;
+                }
+                else
+                {
+                    cout << "Insufficient funds" << endl;
+                } 
+                return;
+            }
+        }
+        cout << "Account not found" << endl;
+    }
+    void printAllAccounts() const {
+        if (accounts.empty()) 
+        {
+            cout << "No accounts available" << endl;
+            return;
+        }
+        for (const auto& account : accounts) 
+        {
+            account.display();
+            cout << "--------------------------" << endl;;
+        }
     }
 };
 
+void showMenu()
+{
+    cout << endl;
+    cout << "--------- Banking System Meun ---------" << endl;
+    cout << "1. Make Account" << endl;
+    cout << "2. Deposit Money" << endl;
+    cout << "3. Withdraw Money" << endl;
+    cout << "4. Inquire All Accounts" << endl;
+    cout << "5. Exit" << endl;
+    cout << "Select an option: " ; 
+}
 
+int main()
+{
+    BankingSystem bankSystem;
+    int choice;
+
+    while (true) {
+        showMenu();
+        cin >> choice;
+        cout << endl;
+
+        switch (choice) {
+            case 1:
+                bankSystem.makeAccount();
+                break;
+            case 2:
+                bankSystem.depositMoney();
+                break;
+            case 3:
+                bankSystem.withdrawMoney();
+                break;
+            case 4:
+                bankSystem.printAllAccounts();
+                break;
+            case 5:
+                std::cout << "Exiting the program..." << endl;
+                return 0;
+            default:
+                std::cout << "Illegal selection. Please try again." << endl;
+        }
+    }
+    return 0;
+}
