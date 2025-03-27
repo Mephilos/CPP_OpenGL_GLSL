@@ -19,14 +19,25 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2692EC712D73FDA7009D7500 /* C++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C++"; sourceTree = BUILT_PRODUCTS_DIR; };
+		264839A92D950416007E01D1 /* C++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C++"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		262FD2AB2D86B83500DF184E /* Exceptions for "C++" folder in "C++" target */ = {
+		2648399D2D94FC4A007E01D1 /* Exceptions for "C++" folder in "C++" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				18_inputOutput/18_6/main.cpp,
+				OldBookCode/Account.cpp,
+				OldBookCode/Account.h,
+				OldBookCode/BankingSystem.cpp,
+				OldBookCode/BankingSystem.h,
+				OldBookCode/CreditAccount.cpp,
+				OldBookCode/CreditAccount.h,
+				OldBookCode/InterestRates.h,
+				OldBookCode/main.cpp,
+				OldBookCode/NormalAccount.cpp,
+				OldBookCode/NormalAccount.h,
+				OldBookCode/StreamHelper.cpp,
+				OldBookCode/StreamHelper.h,
 			);
 			target = 2692EC702D73FDA7009D7500 /* C++ */;
 		};
@@ -36,7 +47,7 @@
 		265997792D7F2B2C005BC656 /* C++ */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				262FD2AB2D86B83500DF184E /* Exceptions for "C++" folder in "C++" target */,
+				2648399D2D94FC4A007E01D1 /* Exceptions for "C++" folder in "C++" target */,
 			);
 			path = "C++";
 			sourceTree = "<group>";
@@ -58,16 +69,8 @@
 			isa = PBXGroup;
 			children = (
 				265997792D7F2B2C005BC656 /* C++ */,
-				2692EC722D73FDA7009D7500 /* Products */,
+				264839A92D950416007E01D1 /* C++ */,
 			);
-			sourceTree = "<group>";
-		};
-		2692EC722D73FDA7009D7500 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2692EC712D73FDA7009D7500 /* C++ */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,7 +103,7 @@
 			packageProductDependencies = (
 			);
 			productName = "C++";
-			productReference = 2692EC712D73FDA7009D7500 /* C++ */;
+			productReference = 264839A92D950416007E01D1 /* C++ */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -128,7 +131,7 @@
 			mainGroup = 2692EC682D73FDA7009D7500;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 2692EC722D73FDA7009D7500 /* Products */;
+			productRefGroup = 2692EC682D73FDA7009D7500;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (

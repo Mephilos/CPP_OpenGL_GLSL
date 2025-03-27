@@ -12,6 +12,8 @@ BankingSystem::BankingSystem() {}
 BankingSystem::~BankingSystem() {}
 
 
+
+//공백 알파뱃만 허용
 bool BankingSystem::isValidName(const string &name)
 {
     for (char c : name)
@@ -53,6 +55,7 @@ int BankingSystem::inputID()
     int id;
     while (true)
     {
+        //cout << "Enter your desired ID number: ";
         if (cin >> id)
         {
             break;
@@ -63,15 +66,15 @@ int BankingSystem::inputID()
             cinClear();
         }
     }
-    stripNewlines();
+    stripNewlines(); //루프 탈출 시 제거
     return id;
 }
 
 int BankingSystem::inputBalance()
 {
     int money;
-
-    cout << "Balance: ";
+    
+    //cout << "Balance: ";
     while (!(cin >> money))
     {
         cout << "Invalid input. Please enter a valid numeric balance" << endl;
@@ -81,7 +84,7 @@ int BankingSystem::inputBalance()
     return money;
 }
 
-Account* BankingSystem::findAccountByID(int id) 
+Account* BankingSystem::findAccountByID(int id)
 {
     for(auto &acc : accounts)
     {
@@ -94,15 +97,16 @@ Account* BankingSystem::findAccountByID(int id)
 }
 
 void BankingSystem::makeAccount()
-{   //기본적으로 NormalAccount 생성 호출 (사용자가 선택으로 분리)
+{
     makeNormalAccount();
 }
 
-void BankingSystem::makeNormalAccount() 
+void BankingSystem::makeNormalAccount()
 {
     int id;
-    while(true) 
+    while(true)
     {
+        cout << "Enter your desired ID number: ";
         id = inputID();
         if(findAccountByID(id) != nullptr)
         {
@@ -113,20 +117,65 @@ void BankingSystem::makeNormalAccount()
     }
     string name = inputName();
     int balance = inputBalance();
-    int rate;
-    cout << "Enter interest rate for Normal Account: ";
-    cin >> rate;
-    stripNewlines();
+    int rate = static_cast<int>(BaseInterestRate::BaseRate);
+    
     accounts.push_back(make_unique<NormalAccount>(id,balance,name, rate));
     cout << "Normal Account Creation Completed" <<endl;
     cout << "ID: " << id << ", Balance: " <<balance << ", Name: " << name << endl;
-
+    
 }
+
+int MakeCreditAccountSelect()
+{
+    int select;
+    
+    while (true)
+    {
+        cout << endl;
+        cout << "--------- Select Credit Rate Menu ---------" << endl;
+        cout << "1. Credit Rate A" << endl;
+        cout << "2. Credit Rate B" << endl;
+        cout << "3. Credit Rate C" << endl;
+        cout << "Select an option: ";
+        
+        cin >> select;
+        if (cin.fail() || !(select < 4 && select > 0))
+        {
+            cout << "Illegal selection. Please try again" << endl;
+            cinClear();
+            continue;
+        }
+        else
+        {
+            stripNewlines();
+            break;
+        }
+    }
+    
+    switch (select)
+    {
+        case 1:
+            return static_cast<int>(CreditInterestRate::A);
+        case 2:
+            return static_cast<int>(CreditInterestRate::B);
+        case 3:
+            return static_cast<int>(CreditInterestRate::C);
+        default:
+            cout << "Illegal selection. Please try again" << endl;
+    }
+    return 0;
+}
+
 void BankingSystem::makeCreditAccount()
 {
     int id;
+    int balance;
+    string name;
+    int rate = static_cast<int>(BaseInterestRate::BaseRate);
+    int creditRate;
     while(true)
     {
+        cout << "Enter your desired ID number: ";
         id = inputID();
         if(findAccountByID(id) != nullptr)
         {
@@ -135,32 +184,22 @@ void BankingSystem::makeCreditAccount()
         }
         break;
     }
-    string name = inputName();
-    int balance = inputBalance();
+    name = inputName();
+    cout << "Initial Deposit: ";
+    balance = inputBalance();
+    creditRate = MakeCreditAccountSelect();
+    stripNewlines();
     
-    cout << "Enter base interest rate (e.g. 1): ";
-    int baseRate;
-    cin >> baseRate;
-    stripNewlines();
-
-    cout << "Enter additional credit interest rate (e.g. 7): ";
-    int creditRate;
-    cin >> creditRate;
-    stripNewlines();
-
-
-    accounts.push_back(make_unique<CreditAccount>(id, balance, name, baseRate, creditRate));
-    cout << "Credit Account Creation Completed" << endl;
-    cout << "ID: "     << id      << endl;
-    cout << "Balance: " << balance << endl;
-    cout << "Name: "    << name    << endl;
-    cout << "Rates: base(" << baseRate << ") + credit(" << creditRate << ")" << endl;
+    accounts.push_back(make_unique<CreditAccount>(id, balance, name, rate, creditRate));
+    cout << "Credit Account Creation Completed" <<endl;
+    cout << "ID: " << id << ", Balance: " << balance << ", Name: " << name <<endl;
+    cout << "Credit Rate: " << creditRate << endl;
 }
 void BankingSystem::depositMoney()
 {
     int id;
     int money;
-    cout << "[[[[[[Deposit]]]]]]" << endl;
+    
     cout << "Enter your desired ID number: ";
     id = inputID();
     Account* account = findAccountByID(id);
@@ -182,7 +221,7 @@ void BankingSystem::withdrawMoney()
 {
     int id;
     int money;
-    cout << "[[[[[[Withdraw]]]]]]" << endl;
+    
     cout << "Enter your Account ID for Withdrawal: ";
     id = inputID();
     
@@ -203,12 +242,15 @@ void BankingSystem::withdrawMoney()
     }
 }
 
-void BankingSystem::printAllAccounts() const {
-    if (accounts.empty()) {
+void BankingSystem::printAllAccounts() const
+{
+    if (accounts.empty())
+    {
         cout << "No accounts available." << endl;
         return;
     }
-    for (const auto &acc : accounts) {
+    for (const auto &acc : accounts)
+    {
         acc->display();
         cout << "--------------------------" << endl;
     }
