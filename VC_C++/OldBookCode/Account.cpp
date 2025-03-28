@@ -1,8 +1,8 @@
 #include "Account.h"
 
 
-Account::Account(int id, int initBalance, const std::string &name)
-    : accID(id), balance(initBalance), cusName(name) {}
+Account::Account(int id, int Balance, const std::string &name)
+    : accID(id), balance(Balance), cusName(name) {}
 
 Account::~Account() { }
 

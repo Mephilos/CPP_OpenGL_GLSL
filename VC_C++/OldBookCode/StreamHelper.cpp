@@ -1,3 +1,4 @@
+
 #include "StreamHelper.h"
 
 void cinClear()
@@ -9,3 +10,4 @@ void stripNewlines()
 {
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 }
+

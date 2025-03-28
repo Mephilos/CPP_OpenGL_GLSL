@@ -4,7 +4,8 @@
 
 using namespace std;
 
-void showMenu() {
+void showMenu()
+{
     cout << endl;
     cout << "--------- Banking System Menu ---------" << endl;
     cout << "1. Make Account" << endl;
@@ -15,17 +16,62 @@ void showMenu() {
     cout << "Select an option: ";
 }
 
-int main() {
+void makeAccountSelect(BankingSystem &bankSystem)
+{
+    int select;
+    while(true)
+    {
+        cout << endl;
+        cout << "--------- Make Account Menu ---------" << endl;
+        cout << "1. Make Normal Account" << endl;
+        cout << "2. Make Credit Account" << endl;
+        cout << "Select an option: ";
+        
+        
+        cin >> select;
+        if (cin.fail() || !(select == 1 || select == 2))
+        {
+            cout << "Illegal selection. Please try again." << endl;
+            cinClear();
+            continue;
+        }
+        else
+        {
+            stripNewlines();
+            break;
+        }
+    }
+    switch (select)
+    {
+        case 1:
+            bankSystem.makeNormalAccount();
+            break;
+        case 2:
+            bankSystem.makeCreditAccount();
+            break;
+        default:
+            cout << "Illegal selection. Please try again." << endl;
+            break;
+    }
+    
+}
+int main()
+{
     BankingSystem bankSystem;
     int choice;
-    while (true) {
+    
+    while (true)
+    {
         showMenu();
         cin >> choice;
         cout << endl;
-        //stripNewlines();
-        switch (choice) {
+        
+        stripNewlines();
+        
+        switch (choice)
+        {
             case 1:
-                bankSystem.makeAccount();
+                makeAccountSelect(bankSystem);
                 break;
             case 2:
                 bankSystem.depositMoney();
@@ -40,6 +86,7 @@ int main() {
                 cout << "Exiting the program..." << endl;
                 return 0;
             default:
+                cinClear();
                 cout << "Illegal selection. Please try again." << endl;
         }
     }

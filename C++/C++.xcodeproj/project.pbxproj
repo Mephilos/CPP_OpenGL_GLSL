@@ -28,6 +28,8 @@
 			membershipExceptions = (
 				OldBookCode/Account.cpp,
 				OldBookCode/Account.h,
+				OldBookCode/AccountHandler.cpp,
+				OldBookCode/AccountHandler.h,
 				OldBookCode/BankingSystem.cpp,
 				OldBookCode/BankingSystem.h,
 				OldBookCode/CreditAccount.cpp,

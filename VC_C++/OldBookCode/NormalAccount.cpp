@@ -8,5 +8,6 @@ NormalAccount::~NormalAccount() {}
 
 void NormalAccount::deposit(int money)
 {
-    Account::deposit(money + (money * interRate / 100));
+    int inter = (getBalance() + money) * interRate / 100;
+    Account::deposit(money + inter);
 }

@@ -5,9 +5,9 @@
 
 class Account {
 protected:
-    int accID;
-    int balance;
-    std::string cusName;
+    int accID; //계좌 아이디
+    int balance;// 잔액
+    std::string cusName; //고객명
     
 public:
     Account(int id, int initBalance, const std::string &name);

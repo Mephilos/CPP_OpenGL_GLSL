@@ -8,5 +8,6 @@ CreditAccount::~CreditAccount() {};
 
 void CreditAccount::deposit(int money)
 {
-    NormalAccount::deposit(money + (money * creditInterRate / 100));
+    int inter = (getBalance() + money) * creditInterRate / 100;
+    NormalAccount::deposit(money + inter);
 }
