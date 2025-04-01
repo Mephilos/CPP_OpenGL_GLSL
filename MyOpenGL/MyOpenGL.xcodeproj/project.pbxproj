@@ -11,8 +11,8 @@
 		26483B942D98F259007E01D1 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 26483B932D98F259007E01D1 /* glad.c */; };
 		26483B962D996D59007E01D1 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26483B952D996D59007E01D1 /* libglfw3.a */; };
 		26483B982D996DF0007E01D1 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26483B972D996DF0007E01D1 /* IOKit.framework */; };
-		26483B9A2D996DFC007E01D1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26483B992D996DFC007E01D1 /* Cocoa.framework */; };
 		26483B9C2D996E0B007E01D1 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26483B9B2D996E0B007E01D1 /* CoreVideo.framework */; };
+		26BA68DF2D9B8C1A00FFB839 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26BA68DE2D9B8C1A00FFB839 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,19 +33,28 @@
 		26483B932D98F259007E01D1 /* glad.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = glad.c; path = glad/src/glad.c; sourceTree = "<group>"; };
 		26483B952D996D59007E01D1 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = ../../../../../opt/homebrew/Cellar/glfw/3.4/lib/libglfw3.a; sourceTree = "<group>"; };
 		26483B972D996DF0007E01D1 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
-		26483B992D996DFC007E01D1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		26483B9B2D996E0B007E01D1 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		26BA68DE2D9B8C1A00FFB839 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
 		26483BA12D997700007E01D1 /* Exceptions for "MyOpenGL" folder in "MyOpenGL" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				HelloTriangle/HelloTriangle.cpp,
-				HelloTriangle/HelloTriangleEBO.cpp,
-				HelloTriangle/HelloTrianglePrc1.cpp,
-				HelloTriangle/HelloTrianglePrc2.cpp,
-				main.cpp,
+				src/HelloTriangle.cpp,
+				src/HelloTriangleEBO.cpp,
+				src/HelloTrianglePrc1.cpp,
+				src/HelloTrianglePrc2.cpp,
+				src/HelloTrianglePrc3.cpp,
+				src/main.cpp,
+				src/Shaders.cpp,
+			);
+			target = 26483B762D966816007E01D1 /* MyOpenGL */;
+		};
+		26BA68EB2D9BA5A300FFB839 /* Exceptions for "include" folder in "MyOpenGL" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Shader.h,
 			);
 			target = 26483B762D966816007E01D1 /* MyOpenGL */;
 		};
@@ -60,6 +69,19 @@
 			path = MyOpenGL;
 			sourceTree = "<group>";
 		};
+		26BA68E62D9BA25700FFB839 /* resources */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = resources;
+			sourceTree = "<group>";
+		};
+		26BA68E72D9BA25B00FFB839 /* include */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				26BA68EB2D9BA5A300FFB839 /* Exceptions for "include" folder in "MyOpenGL" target */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +89,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26BA68DF2D9B8C1A00FFB839 /* Cocoa.framework in Frameworks */,
 				26483B8D2D966CD6007E01D1 /* OpenGL.framework in Frameworks */,
 				26483B9C2D996E0B007E01D1 /* CoreVideo.framework in Frameworks */,
-				26483B9A2D996DFC007E01D1 /* Cocoa.framework in Frameworks */,
 				26483B982D996DF0007E01D1 /* IOKit.framework in Frameworks */,
 				26483B962D996D59007E01D1 /* libglfw3.a in Frameworks */,
 			);
@@ -82,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				26483B932D98F259007E01D1 /* glad.c */,
+				26BA68E72D9BA25B00FFB839 /* include */,
+				26BA68E62D9BA25700FFB839 /* resources */,
 				26483B792D966816007E01D1 /* MyOpenGL */,
 				26483B812D9668C6007E01D1 /* Frameworks */,
 				26483B782D966816007E01D1 /* Products */,
@@ -99,11 +123,11 @@
 		26483B812D9668C6007E01D1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				26BA68DE2D9B8C1A00FFB839 /* Cocoa.framework */,
 				26483B9B2D996E0B007E01D1 /* CoreVideo.framework */,
-				26483B992D996DFC007E01D1 /* Cocoa.framework */,
 				26483B972D996DF0007E01D1 /* IOKit.framework */,
-				26483B952D996D59007E01D1 /* libglfw3.a */,
 				26483B822D9668C6007E01D1 /* OpenGL.framework */,
+				26483B952D996D59007E01D1 /* libglfw3.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -136,6 +160,8 @@
 			);
 			fileSystemSynchronizedGroups = (
 				26483B792D966816007E01D1 /* MyOpenGL */,
+				26BA68E62D9BA25700FFB839 /* resources */,
+				26BA68E72D9BA25B00FFB839 /* include */,
 			);
 			name = MyOpenGL;
 			packageProductDependencies = (
@@ -313,6 +339,7 @@
 				HEADER_SEARCH_PATHS = (
 					/opt/homebrew/include,
 					/Users/taehosim/Dev/Study/MyOpenGL/glad/include,
+					/Users/taehosim/Dev/Study/MyOpenGL,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -332,6 +359,7 @@
 				HEADER_SEARCH_PATHS = (
 					/opt/homebrew/include,
 					/Users/taehosim/Dev/Study/MyOpenGL/glad/include,
+					/Users/taehosim/Dev/Study/MyOpenGL,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
