@@ -130,84 +130,6 @@ glad/fast:
 .PHONY : glad/fast
 
 #=============================================================================
-# Target rules for targets named HelloTriangle_OpenGL
-
-# Build rule for target.
-HelloTriangle_OpenGL: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HelloTriangle_OpenGL
-.PHONY : HelloTriangle_OpenGL
-
-# fast build rule for target.
-HelloTriangle_OpenGL/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTriangle_OpenGL.dir/build.make CMakeFiles/HelloTriangle_OpenGL.dir/build
-.PHONY : HelloTriangle_OpenGL/fast
-
-#=============================================================================
-# Target rules for targets named HelloTriangleEBO_OpenGL
-
-# Build rule for target.
-HelloTriangleEBO_OpenGL: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HelloTriangleEBO_OpenGL
-.PHONY : HelloTriangleEBO_OpenGL
-
-# fast build rule for target.
-HelloTriangleEBO_OpenGL/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTriangleEBO_OpenGL.dir/build.make CMakeFiles/HelloTriangleEBO_OpenGL.dir/build
-.PHONY : HelloTriangleEBO_OpenGL/fast
-
-#=============================================================================
-# Target rules for targets named HelloTrianglePrc1_OpenGL
-
-# Build rule for target.
-HelloTrianglePrc1_OpenGL: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HelloTrianglePrc1_OpenGL
-.PHONY : HelloTrianglePrc1_OpenGL
-
-# fast build rule for target.
-HelloTrianglePrc1_OpenGL/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTrianglePrc1_OpenGL.dir/build.make CMakeFiles/HelloTrianglePrc1_OpenGL.dir/build
-.PHONY : HelloTrianglePrc1_OpenGL/fast
-
-#=============================================================================
-# Target rules for targets named HelloTrianglePrc2_OpenGL
-
-# Build rule for target.
-HelloTrianglePrc2_OpenGL: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HelloTrianglePrc2_OpenGL
-.PHONY : HelloTrianglePrc2_OpenGL
-
-# fast build rule for target.
-HelloTrianglePrc2_OpenGL/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTrianglePrc2_OpenGL.dir/build.make CMakeFiles/HelloTrianglePrc2_OpenGL.dir/build
-.PHONY : HelloTrianglePrc2_OpenGL/fast
-
-#=============================================================================
-# Target rules for targets named HelloTrianglePrc3_OpenGL
-
-# Build rule for target.
-HelloTrianglePrc3_OpenGL: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HelloTrianglePrc3_OpenGL
-.PHONY : HelloTrianglePrc3_OpenGL
-
-# fast build rule for target.
-HelloTrianglePrc3_OpenGL/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTrianglePrc3_OpenGL.dir/build.make CMakeFiles/HelloTrianglePrc3_OpenGL.dir/build
-.PHONY : HelloTrianglePrc3_OpenGL/fast
-
-#=============================================================================
-# Target rules for targets named Shaders_OpenGL
-
-# Build rule for target.
-Shaders_OpenGL: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Shaders_OpenGL
-.PHONY : Shaders_OpenGL
-
-# fast build rule for target.
-Shaders_OpenGL/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shaders_OpenGL.dir/build.make CMakeFiles/Shaders_OpenGL.dir/build
-.PHONY : Shaders_OpenGL/fast
-
-#=============================================================================
 # Target rules for targets named Texture_OpenGL
 
 # Build rule for target.
@@ -226,12 +148,6 @@ glad/src/glad.o: glad/src/glad.c.o
 # target to build an object file
 glad/src/glad.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/glad/src/glad.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTriangle_OpenGL.dir/build.make CMakeFiles/HelloTriangle_OpenGL.dir/glad/src/glad.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTriangleEBO_OpenGL.dir/build.make CMakeFiles/HelloTriangleEBO_OpenGL.dir/glad/src/glad.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTrianglePrc1_OpenGL.dir/build.make CMakeFiles/HelloTrianglePrc1_OpenGL.dir/glad/src/glad.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTrianglePrc2_OpenGL.dir/build.make CMakeFiles/HelloTrianglePrc2_OpenGL.dir/glad/src/glad.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTrianglePrc3_OpenGL.dir/build.make CMakeFiles/HelloTrianglePrc3_OpenGL.dir/glad/src/glad.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shaders_OpenGL.dir/build.make CMakeFiles/Shaders_OpenGL.dir/glad/src/glad.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Texture_OpenGL.dir/build.make CMakeFiles/Texture_OpenGL.dir/glad/src/glad.c.o
 .PHONY : glad/src/glad.c.o
 
@@ -241,12 +157,6 @@ glad/src/glad.i: glad/src/glad.c.i
 # target to preprocess a source file
 glad/src/glad.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/glad/src/glad.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTriangle_OpenGL.dir/build.make CMakeFiles/HelloTriangle_OpenGL.dir/glad/src/glad.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTriangleEBO_OpenGL.dir/build.make CMakeFiles/HelloTriangleEBO_OpenGL.dir/glad/src/glad.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTrianglePrc1_OpenGL.dir/build.make CMakeFiles/HelloTrianglePrc1_OpenGL.dir/glad/src/glad.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTrianglePrc2_OpenGL.dir/build.make CMakeFiles/HelloTrianglePrc2_OpenGL.dir/glad/src/glad.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTrianglePrc3_OpenGL.dir/build.make CMakeFiles/HelloTrianglePrc3_OpenGL.dir/glad/src/glad.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shaders_OpenGL.dir/build.make CMakeFiles/Shaders_OpenGL.dir/glad/src/glad.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Texture_OpenGL.dir/build.make CMakeFiles/Texture_OpenGL.dir/glad/src/glad.c.i
 .PHONY : glad/src/glad.c.i
 
@@ -256,158 +166,8 @@ glad/src/glad.s: glad/src/glad.c.s
 # target to generate assembly for a file
 glad/src/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/glad/src/glad.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTriangle_OpenGL.dir/build.make CMakeFiles/HelloTriangle_OpenGL.dir/glad/src/glad.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTriangleEBO_OpenGL.dir/build.make CMakeFiles/HelloTriangleEBO_OpenGL.dir/glad/src/glad.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTrianglePrc1_OpenGL.dir/build.make CMakeFiles/HelloTrianglePrc1_OpenGL.dir/glad/src/glad.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTrianglePrc2_OpenGL.dir/build.make CMakeFiles/HelloTrianglePrc2_OpenGL.dir/glad/src/glad.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTrianglePrc3_OpenGL.dir/build.make CMakeFiles/HelloTrianglePrc3_OpenGL.dir/glad/src/glad.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shaders_OpenGL.dir/build.make CMakeFiles/Shaders_OpenGL.dir/glad/src/glad.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Texture_OpenGL.dir/build.make CMakeFiles/Texture_OpenGL.dir/glad/src/glad.c.s
 .PHONY : glad/src/glad.c.s
-
-src/HelloTriangle.o: src/HelloTriangle.cpp.o
-.PHONY : src/HelloTriangle.o
-
-# target to build an object file
-src/HelloTriangle.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTriangle_OpenGL.dir/build.make CMakeFiles/HelloTriangle_OpenGL.dir/src/HelloTriangle.cpp.o
-.PHONY : src/HelloTriangle.cpp.o
-
-src/HelloTriangle.i: src/HelloTriangle.cpp.i
-.PHONY : src/HelloTriangle.i
-
-# target to preprocess a source file
-src/HelloTriangle.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTriangle_OpenGL.dir/build.make CMakeFiles/HelloTriangle_OpenGL.dir/src/HelloTriangle.cpp.i
-.PHONY : src/HelloTriangle.cpp.i
-
-src/HelloTriangle.s: src/HelloTriangle.cpp.s
-.PHONY : src/HelloTriangle.s
-
-# target to generate assembly for a file
-src/HelloTriangle.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTriangle_OpenGL.dir/build.make CMakeFiles/HelloTriangle_OpenGL.dir/src/HelloTriangle.cpp.s
-.PHONY : src/HelloTriangle.cpp.s
-
-src/HelloTriangleEBO.o: src/HelloTriangleEBO.cpp.o
-.PHONY : src/HelloTriangleEBO.o
-
-# target to build an object file
-src/HelloTriangleEBO.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTriangleEBO_OpenGL.dir/build.make CMakeFiles/HelloTriangleEBO_OpenGL.dir/src/HelloTriangleEBO.cpp.o
-.PHONY : src/HelloTriangleEBO.cpp.o
-
-src/HelloTriangleEBO.i: src/HelloTriangleEBO.cpp.i
-.PHONY : src/HelloTriangleEBO.i
-
-# target to preprocess a source file
-src/HelloTriangleEBO.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTriangleEBO_OpenGL.dir/build.make CMakeFiles/HelloTriangleEBO_OpenGL.dir/src/HelloTriangleEBO.cpp.i
-.PHONY : src/HelloTriangleEBO.cpp.i
-
-src/HelloTriangleEBO.s: src/HelloTriangleEBO.cpp.s
-.PHONY : src/HelloTriangleEBO.s
-
-# target to generate assembly for a file
-src/HelloTriangleEBO.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTriangleEBO_OpenGL.dir/build.make CMakeFiles/HelloTriangleEBO_OpenGL.dir/src/HelloTriangleEBO.cpp.s
-.PHONY : src/HelloTriangleEBO.cpp.s
-
-src/HelloTrianglePrc1.o: src/HelloTrianglePrc1.cpp.o
-.PHONY : src/HelloTrianglePrc1.o
-
-# target to build an object file
-src/HelloTrianglePrc1.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTrianglePrc1_OpenGL.dir/build.make CMakeFiles/HelloTrianglePrc1_OpenGL.dir/src/HelloTrianglePrc1.cpp.o
-.PHONY : src/HelloTrianglePrc1.cpp.o
-
-src/HelloTrianglePrc1.i: src/HelloTrianglePrc1.cpp.i
-.PHONY : src/HelloTrianglePrc1.i
-
-# target to preprocess a source file
-src/HelloTrianglePrc1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTrianglePrc1_OpenGL.dir/build.make CMakeFiles/HelloTrianglePrc1_OpenGL.dir/src/HelloTrianglePrc1.cpp.i
-.PHONY : src/HelloTrianglePrc1.cpp.i
-
-src/HelloTrianglePrc1.s: src/HelloTrianglePrc1.cpp.s
-.PHONY : src/HelloTrianglePrc1.s
-
-# target to generate assembly for a file
-src/HelloTrianglePrc1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTrianglePrc1_OpenGL.dir/build.make CMakeFiles/HelloTrianglePrc1_OpenGL.dir/src/HelloTrianglePrc1.cpp.s
-.PHONY : src/HelloTrianglePrc1.cpp.s
-
-src/HelloTrianglePrc2.o: src/HelloTrianglePrc2.cpp.o
-.PHONY : src/HelloTrianglePrc2.o
-
-# target to build an object file
-src/HelloTrianglePrc2.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTrianglePrc2_OpenGL.dir/build.make CMakeFiles/HelloTrianglePrc2_OpenGL.dir/src/HelloTrianglePrc2.cpp.o
-.PHONY : src/HelloTrianglePrc2.cpp.o
-
-src/HelloTrianglePrc2.i: src/HelloTrianglePrc2.cpp.i
-.PHONY : src/HelloTrianglePrc2.i
-
-# target to preprocess a source file
-src/HelloTrianglePrc2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTrianglePrc2_OpenGL.dir/build.make CMakeFiles/HelloTrianglePrc2_OpenGL.dir/src/HelloTrianglePrc2.cpp.i
-.PHONY : src/HelloTrianglePrc2.cpp.i
-
-src/HelloTrianglePrc2.s: src/HelloTrianglePrc2.cpp.s
-.PHONY : src/HelloTrianglePrc2.s
-
-# target to generate assembly for a file
-src/HelloTrianglePrc2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTrianglePrc2_OpenGL.dir/build.make CMakeFiles/HelloTrianglePrc2_OpenGL.dir/src/HelloTrianglePrc2.cpp.s
-.PHONY : src/HelloTrianglePrc2.cpp.s
-
-src/HelloTrianglePrc3.o: src/HelloTrianglePrc3.cpp.o
-.PHONY : src/HelloTrianglePrc3.o
-
-# target to build an object file
-src/HelloTrianglePrc3.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTrianglePrc3_OpenGL.dir/build.make CMakeFiles/HelloTrianglePrc3_OpenGL.dir/src/HelloTrianglePrc3.cpp.o
-.PHONY : src/HelloTrianglePrc3.cpp.o
-
-src/HelloTrianglePrc3.i: src/HelloTrianglePrc3.cpp.i
-.PHONY : src/HelloTrianglePrc3.i
-
-# target to preprocess a source file
-src/HelloTrianglePrc3.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTrianglePrc3_OpenGL.dir/build.make CMakeFiles/HelloTrianglePrc3_OpenGL.dir/src/HelloTrianglePrc3.cpp.i
-.PHONY : src/HelloTrianglePrc3.cpp.i
-
-src/HelloTrianglePrc3.s: src/HelloTrianglePrc3.cpp.s
-.PHONY : src/HelloTrianglePrc3.s
-
-# target to generate assembly for a file
-src/HelloTrianglePrc3.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloTrianglePrc3_OpenGL.dir/build.make CMakeFiles/HelloTrianglePrc3_OpenGL.dir/src/HelloTrianglePrc3.cpp.s
-.PHONY : src/HelloTrianglePrc3.cpp.s
-
-src/Shaders.o: src/Shaders.cpp.o
-.PHONY : src/Shaders.o
-
-# target to build an object file
-src/Shaders.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shaders_OpenGL.dir/build.make CMakeFiles/Shaders_OpenGL.dir/src/Shaders.cpp.o
-.PHONY : src/Shaders.cpp.o
-
-src/Shaders.i: src/Shaders.cpp.i
-.PHONY : src/Shaders.i
-
-# target to preprocess a source file
-src/Shaders.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shaders_OpenGL.dir/build.make CMakeFiles/Shaders_OpenGL.dir/src/Shaders.cpp.i
-.PHONY : src/Shaders.cpp.i
-
-src/Shaders.s: src/Shaders.cpp.s
-.PHONY : src/Shaders.s
-
-# target to generate assembly for a file
-src/Shaders.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shaders_OpenGL.dir/build.make CMakeFiles/Shaders_OpenGL.dir/src/Shaders.cpp.s
-.PHONY : src/Shaders.cpp.s
 
 src/Texture.o: src/Texture.cpp.o
 .PHONY : src/Texture.o
@@ -441,35 +201,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... HelloTriangleEBO_OpenGL"
-	@echo "... HelloTrianglePrc1_OpenGL"
-	@echo "... HelloTrianglePrc2_OpenGL"
-	@echo "... HelloTrianglePrc3_OpenGL"
-	@echo "... HelloTriangle_OpenGL"
-	@echo "... Shaders_OpenGL"
 	@echo "... Texture_OpenGL"
 	@echo "... glad"
 	@echo "... glad/src/glad.o"
 	@echo "... glad/src/glad.i"
 	@echo "... glad/src/glad.s"
-	@echo "... src/HelloTriangle.o"
-	@echo "... src/HelloTriangle.i"
-	@echo "... src/HelloTriangle.s"
-	@echo "... src/HelloTriangleEBO.o"
-	@echo "... src/HelloTriangleEBO.i"
-	@echo "... src/HelloTriangleEBO.s"
-	@echo "... src/HelloTrianglePrc1.o"
-	@echo "... src/HelloTrianglePrc1.i"
-	@echo "... src/HelloTrianglePrc1.s"
-	@echo "... src/HelloTrianglePrc2.o"
-	@echo "... src/HelloTrianglePrc2.i"
-	@echo "... src/HelloTrianglePrc2.s"
-	@echo "... src/HelloTrianglePrc3.o"
-	@echo "... src/HelloTrianglePrc3.i"
-	@echo "... src/HelloTrianglePrc3.s"
-	@echo "... src/Shaders.o"
-	@echo "... src/Shaders.i"
-	@echo "... src/Shaders.s"
 	@echo "... src/Texture.o"
 	@echo "... src/Texture.i"
 	@echo "... src/Texture.s"

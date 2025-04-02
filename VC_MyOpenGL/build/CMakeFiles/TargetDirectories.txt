@@ -1,10 +1,4 @@
 /Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles/glad.dir
-/Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles/HelloTriangle_OpenGL.dir
-/Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles/HelloTriangleEBO_OpenGL.dir
-/Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles/HelloTrianglePrc1_OpenGL.dir
-/Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles/HelloTrianglePrc2_OpenGL.dir
-/Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles/HelloTrianglePrc3_OpenGL.dir
-/Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles/Shaders_OpenGL.dir
 /Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles/Texture_OpenGL.dir
 /Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles/edit_cache.dir
 /Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles/rebuild_cache.dir

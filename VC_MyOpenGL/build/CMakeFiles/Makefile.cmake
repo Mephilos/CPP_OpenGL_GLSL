@@ -60,11 +60,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/glad.dir/DependInfo.cmake"
-  "CMakeFiles/HelloTriangle_OpenGL.dir/DependInfo.cmake"
-  "CMakeFiles/HelloTriangleEBO_OpenGL.dir/DependInfo.cmake"
-  "CMakeFiles/HelloTrianglePrc1_OpenGL.dir/DependInfo.cmake"
-  "CMakeFiles/HelloTrianglePrc2_OpenGL.dir/DependInfo.cmake"
-  "CMakeFiles/HelloTrianglePrc3_OpenGL.dir/DependInfo.cmake"
-  "CMakeFiles/Shaders_OpenGL.dir/DependInfo.cmake"
   "CMakeFiles/Texture_OpenGL.dir/DependInfo.cmake"
   )
