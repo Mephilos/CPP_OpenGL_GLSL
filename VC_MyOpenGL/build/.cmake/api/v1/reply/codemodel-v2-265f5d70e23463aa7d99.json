@@ -1,0 +1,123 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "OpenGLApp",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "HelloTriangleEBO_OpenGL::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-HelloTriangleEBO_OpenGL-Debug-0dcb5e0866ed3efb97db.json",
+					"name" : "HelloTriangleEBO_OpenGL",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "HelloTrianglePrc1_OpenGL::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-HelloTrianglePrc1_OpenGL-Debug-b521c00f978c7dccead0.json",
+					"name" : "HelloTrianglePrc1_OpenGL",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "HelloTrianglePrc2_OpenGL::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-HelloTrianglePrc2_OpenGL-Debug-8e814f4e6283bbd628d4.json",
+					"name" : "HelloTrianglePrc2_OpenGL",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "HelloTrianglePrc3_OpenGL::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-HelloTrianglePrc3_OpenGL-Debug-c274e598220d88cb54b6.json",
+					"name" : "HelloTrianglePrc3_OpenGL",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "HelloTriangle_OpenGL::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-HelloTriangle_OpenGL-Debug-f1f308eb4c336736eff3.json",
+					"name" : "HelloTriangle_OpenGL",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Shaders_OpenGL::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Shaders_OpenGL-Debug-a257cc36891e31c97a8d.json",
+					"name" : "Shaders_OpenGL",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Texture_OpenGL::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Texture_OpenGL-Debug-2f584b9be15827f766e9.json",
+					"name" : "Texture_OpenGL",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "glad::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-glad-Debug-d187526f31240de2e290.json",
+					"name" : "glad",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/taehosim/Dev/Study/VC_MyOpenGL/build",
+		"source" : "/Users/taehosim/Dev/Study/VC_MyOpenGL"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
