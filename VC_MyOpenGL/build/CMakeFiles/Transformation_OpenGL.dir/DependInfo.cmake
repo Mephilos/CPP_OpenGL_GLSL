@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/taehosim/Dev/Study/VC_MyOpenGL/glad/src/glad.c" "CMakeFiles/Texture_OpenGL.dir/glad/src/glad.c.o" "gcc" "CMakeFiles/Texture_OpenGL.dir/glad/src/glad.c.o.d"
-  "/Users/taehosim/Dev/Study/VC_MyOpenGL/src/Texture.cpp" "CMakeFiles/Texture_OpenGL.dir/src/Texture.cpp.o" "gcc" "CMakeFiles/Texture_OpenGL.dir/src/Texture.cpp.o.d"
+  "/Users/taehosim/Dev/Study/VC_MyOpenGL/glad/src/glad.c" "CMakeFiles/Transformation_OpenGL.dir/glad/src/glad.c.o" "gcc" "CMakeFiles/Transformation_OpenGL.dir/glad/src/glad.c.o.d"
+  "/Users/taehosim/Dev/Study/VC_MyOpenGL/src/Transformation.cpp" "CMakeFiles/Transformation_OpenGL.dir/src/Transformation.cpp.o" "gcc" "CMakeFiles/Transformation_OpenGL.dir/src/Transformation.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

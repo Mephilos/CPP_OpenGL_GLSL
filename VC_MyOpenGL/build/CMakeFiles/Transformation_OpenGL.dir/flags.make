@@ -5,7 +5,7 @@
 # compile CXX with /usr/bin/clang++
 C_DEFINES = 
 
-C_INCLUDES = -I/opt/homebrew/Cellar/glfw/3.4/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL/glad/include
+C_INCLUDES = -I/opt/homebrew/Cellar/glfw/3.4/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL/glad/include -I/opt/homebrew/include
 
 C_FLAGSarm64 = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk
 
@@ -13,7 +13,7 @@ C_FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Pl
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/opt/homebrew/Cellar/glfw/3.4/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL/glad/include
+CXX_INCLUDES = -I/opt/homebrew/Cellar/glfw/3.4/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL/glad/include -I/opt/homebrew/include
 
 CXX_FLAGSarm64 = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk
 

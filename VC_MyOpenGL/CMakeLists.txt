@@ -6,6 +6,8 @@ set(CMAKE_CXX_STANDARD 17)
 # GLFW
 find_package(PkgConfig REQUIRED)
 pkg_search_module(GLFW REQUIRED glfw3)
+find_package(glm CONFIG REQUIRED)
+
 
 include_directories(
     ${GLFW_INCLUDE_DIRS}
@@ -51,6 +53,7 @@ foreach(source ${SOURCES})
     target_include_directories(${EXEC_NAME} PRIVATE
         glad/include
         ${GLFW_INCLUDE_DIRS}
+        /opt/homebrew/include
     )
 
     target_link_libraries(${EXEC_NAME}
