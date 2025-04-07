@@ -64,12 +64,12 @@ CMAKE_BINARY_DIR = /Users/taehosim/Dev/Study/VC_MyOpenGL/build
 
 # The main recursive "all" target.
 all: CMakeFiles/glad.dir/all
-all: CMakeFiles/Transformation_OpenGL.dir/all
+all: CMakeFiles/Camera_OpenGL.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/glad.dir/codegen
-codegen: CMakeFiles/Transformation_OpenGL.dir/codegen
+codegen: CMakeFiles/Camera_OpenGL.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -78,7 +78,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/glad.dir/clean
-clean: CMakeFiles/Transformation_OpenGL.dir/clean
+clean: CMakeFiles/Camera_OpenGL.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -114,36 +114,36 @@ CMakeFiles/glad.dir/clean:
 .PHONY : CMakeFiles/glad.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Transformation_OpenGL.dir
+# Target rules for target CMakeFiles/Camera_OpenGL.dir
 
 # All Build rule for target.
-CMakeFiles/Transformation_OpenGL.dir/all: CMakeFiles/glad.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Transformation_OpenGL.dir/build.make CMakeFiles/Transformation_OpenGL.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Transformation_OpenGL.dir/build.make CMakeFiles/Transformation_OpenGL.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles --progress-num=1,2,3 "Built target Transformation_OpenGL"
-.PHONY : CMakeFiles/Transformation_OpenGL.dir/all
+CMakeFiles/Camera_OpenGL.dir/all: CMakeFiles/glad.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Camera_OpenGL.dir/build.make CMakeFiles/Camera_OpenGL.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Camera_OpenGL.dir/build.make CMakeFiles/Camera_OpenGL.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles --progress-num=1,2,3 "Built target Camera_OpenGL"
+.PHONY : CMakeFiles/Camera_OpenGL.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Transformation_OpenGL.dir/rule: cmake_check_build_system
+CMakeFiles/Camera_OpenGL.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles 5
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Transformation_OpenGL.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Camera_OpenGL.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles 0
-.PHONY : CMakeFiles/Transformation_OpenGL.dir/rule
+.PHONY : CMakeFiles/Camera_OpenGL.dir/rule
 
 # Convenience name for target.
-Transformation_OpenGL: CMakeFiles/Transformation_OpenGL.dir/rule
-.PHONY : Transformation_OpenGL
+Camera_OpenGL: CMakeFiles/Camera_OpenGL.dir/rule
+.PHONY : Camera_OpenGL
 
 # codegen rule for target.
-CMakeFiles/Transformation_OpenGL.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Transformation_OpenGL.dir/build.make CMakeFiles/Transformation_OpenGL.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles --progress-num=1,2,3 "Finished codegen for target Transformation_OpenGL"
-.PHONY : CMakeFiles/Transformation_OpenGL.dir/codegen
+CMakeFiles/Camera_OpenGL.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Camera_OpenGL.dir/build.make CMakeFiles/Camera_OpenGL.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles --progress-num=1,2,3 "Finished codegen for target Camera_OpenGL"
+.PHONY : CMakeFiles/Camera_OpenGL.dir/codegen
 
 # clean rule for target.
-CMakeFiles/Transformation_OpenGL.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Transformation_OpenGL.dir/build.make CMakeFiles/Transformation_OpenGL.dir/clean
-.PHONY : CMakeFiles/Transformation_OpenGL.dir/clean
+CMakeFiles/Camera_OpenGL.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Camera_OpenGL.dir/build.make CMakeFiles/Camera_OpenGL.dir/clean
+.PHONY : CMakeFiles/Camera_OpenGL.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

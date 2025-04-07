@@ -40,9 +40,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "Transformation_OpenGL::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Transformation_OpenGL-Debug-0714ee00e7b6b12ad266.json",
-					"name" : "Transformation_OpenGL",
+					"id" : "Camera_OpenGL::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Camera_OpenGL-Debug-db88d46160aed9b1ce05.json",
+					"name" : "Camera_OpenGL",
 					"projectIndex" : 0
 				},
 				{

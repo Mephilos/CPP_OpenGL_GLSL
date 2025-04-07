@@ -130,17 +130,17 @@ glad/fast:
 .PHONY : glad/fast
 
 #=============================================================================
-# Target rules for targets named Transformation_OpenGL
+# Target rules for targets named Camera_OpenGL
 
 # Build rule for target.
-Transformation_OpenGL: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Transformation_OpenGL
-.PHONY : Transformation_OpenGL
+Camera_OpenGL: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Camera_OpenGL
+.PHONY : Camera_OpenGL
 
 # fast build rule for target.
-Transformation_OpenGL/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Transformation_OpenGL.dir/build.make CMakeFiles/Transformation_OpenGL.dir/build
-.PHONY : Transformation_OpenGL/fast
+Camera_OpenGL/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Camera_OpenGL.dir/build.make CMakeFiles/Camera_OpenGL.dir/build
+.PHONY : Camera_OpenGL/fast
 
 glad/src/glad.o: glad/src/glad.c.o
 .PHONY : glad/src/glad.o
@@ -148,7 +148,7 @@ glad/src/glad.o: glad/src/glad.c.o
 # target to build an object file
 glad/src/glad.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/glad/src/glad.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Transformation_OpenGL.dir/build.make CMakeFiles/Transformation_OpenGL.dir/glad/src/glad.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Camera_OpenGL.dir/build.make CMakeFiles/Camera_OpenGL.dir/glad/src/glad.c.o
 .PHONY : glad/src/glad.c.o
 
 glad/src/glad.i: glad/src/glad.c.i
@@ -157,7 +157,7 @@ glad/src/glad.i: glad/src/glad.c.i
 # target to preprocess a source file
 glad/src/glad.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/glad/src/glad.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Transformation_OpenGL.dir/build.make CMakeFiles/Transformation_OpenGL.dir/glad/src/glad.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Camera_OpenGL.dir/build.make CMakeFiles/Camera_OpenGL.dir/glad/src/glad.c.i
 .PHONY : glad/src/glad.c.i
 
 glad/src/glad.s: glad/src/glad.c.s
@@ -166,32 +166,32 @@ glad/src/glad.s: glad/src/glad.c.s
 # target to generate assembly for a file
 glad/src/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/glad/src/glad.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Transformation_OpenGL.dir/build.make CMakeFiles/Transformation_OpenGL.dir/glad/src/glad.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Camera_OpenGL.dir/build.make CMakeFiles/Camera_OpenGL.dir/glad/src/glad.c.s
 .PHONY : glad/src/glad.c.s
 
-src/Transformation.o: src/Transformation.cpp.o
-.PHONY : src/Transformation.o
+src/Camera.o: src/Camera.cpp.o
+.PHONY : src/Camera.o
 
 # target to build an object file
-src/Transformation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Transformation_OpenGL.dir/build.make CMakeFiles/Transformation_OpenGL.dir/src/Transformation.cpp.o
-.PHONY : src/Transformation.cpp.o
+src/Camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Camera_OpenGL.dir/build.make CMakeFiles/Camera_OpenGL.dir/src/Camera.cpp.o
+.PHONY : src/Camera.cpp.o
 
-src/Transformation.i: src/Transformation.cpp.i
-.PHONY : src/Transformation.i
+src/Camera.i: src/Camera.cpp.i
+.PHONY : src/Camera.i
 
 # target to preprocess a source file
-src/Transformation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Transformation_OpenGL.dir/build.make CMakeFiles/Transformation_OpenGL.dir/src/Transformation.cpp.i
-.PHONY : src/Transformation.cpp.i
+src/Camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Camera_OpenGL.dir/build.make CMakeFiles/Camera_OpenGL.dir/src/Camera.cpp.i
+.PHONY : src/Camera.cpp.i
 
-src/Transformation.s: src/Transformation.cpp.s
-.PHONY : src/Transformation.s
+src/Camera.s: src/Camera.cpp.s
+.PHONY : src/Camera.s
 
 # target to generate assembly for a file
-src/Transformation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Transformation_OpenGL.dir/build.make CMakeFiles/Transformation_OpenGL.dir/src/Transformation.cpp.s
-.PHONY : src/Transformation.cpp.s
+src/Camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Camera_OpenGL.dir/build.make CMakeFiles/Camera_OpenGL.dir/src/Camera.cpp.s
+.PHONY : src/Camera.cpp.s
 
 # Help Target
 help:
@@ -201,14 +201,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Transformation_OpenGL"
+	@echo "... Camera_OpenGL"
 	@echo "... glad"
 	@echo "... glad/src/glad.o"
 	@echo "... glad/src/glad.i"
 	@echo "... glad/src/glad.s"
-	@echo "... src/Transformation.o"
-	@echo "... src/Transformation.i"
-	@echo "... src/Transformation.s"
+	@echo "... src/Camera.o"
+	@echo "... src/Camera.i"
+	@echo "... src/Camera.s"
 .PHONY : help
 
 

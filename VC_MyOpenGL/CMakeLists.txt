@@ -42,7 +42,7 @@ foreach(source ${SOURCES})
     get_filename_component(FILENAME ${source} NAME_WE)
     
     if(FILENAME MATCHES "skip")
-        message(STATUS "skipping &{FILENAME}")
+        message(STATUS "skipping ${FILENAME}")
         continue()
     endif()
     

@@ -63,5 +63,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/glad.dir/DependInfo.cmake"
-  "CMakeFiles/Transformation_OpenGL.dir/DependInfo.cmake"
+  "CMakeFiles/Camera_OpenGL.dir/DependInfo.cmake"
   )

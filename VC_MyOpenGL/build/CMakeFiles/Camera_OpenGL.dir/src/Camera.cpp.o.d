@@ -1,5 +1,5 @@
-CMakeFiles/Transformation_OpenGL.dir/src/Transformation.cpp.o: \
-  /Users/taehosim/Dev/Study/VC_MyOpenGL/src/Transformation.cpp \
+CMakeFiles/Camera_OpenGL.dir/src/Camera.cpp.o: \
+  /Users/taehosim/Dev/Study/VC_MyOpenGL/src/Camera.cpp \
   /Users/taehosim/Dev/Study/VC_MyOpenGL/src/../include/Shader.h \
   /Users/taehosim/Dev/Study/VC_MyOpenGL/glad/include/glad/glad.h \
   /Users/taehosim/Dev/Study/VC_MyOpenGL/glad/include/KHR/khrplatform.h \
