@@ -1,6 +1,6 @@
-CMakeFiles/main_OpenGL.dir/src/main.cpp.o: \
-  /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/main.cpp \
-  /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/../include/Shader.h \
+CMakeFiles/Main_OpenGL.dir/main.cpp.o: \
+  /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/main.cpp \
+  /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/include/Shader.h \
   /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/glad/include/glad/glad.h \
   /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/glad/include/KHR/khrplatform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/c++/v1/stdint.h \
@@ -1005,8 +1005,8 @@ CMakeFiles/main_OpenGL.dir/src/main.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/c++/v1/__filesystem/u8path.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/c++/v1/sstream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/c++/v1/iostream \
-  /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/../include/stb_image.h \
-  /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/../include/Camera.h \
+  /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/include/stb_image.h \
+  /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/include/Camera.h \
   /opt/homebrew/include/glm/gtc/matrix_transform.hpp \
   /opt/homebrew/include/glm/gtc/../mat4x4.hpp \
   /opt/homebrew/include/glm/gtc/../vec2.hpp \

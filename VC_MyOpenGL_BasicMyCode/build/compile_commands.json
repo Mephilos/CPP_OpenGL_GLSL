@@ -7,14 +7,14 @@
 },
 {
   "directory": "/Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/build",
-  "command": "/usr/bin/clang++  -I/opt/homebrew/Cellar/glfw/3.4/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/glad/include -I/opt/homebrew/include -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -o CMakeFiles/main_OpenGL.dir/src/main.cpp.o -c /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/main.cpp",
-  "file": "/Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/main.cpp",
-  "output": "CMakeFiles/main_OpenGL.dir/src/main.cpp.o"
+  "command": "/usr/bin/clang++  -I/opt/homebrew/Cellar/glfw/3.4/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/glad/include -I/opt/homebrew/include -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -o CMakeFiles/Main_OpenGL.dir/main.cpp.o -c /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/main.cpp",
+  "file": "/Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/main.cpp",
+  "output": "CMakeFiles/Main_OpenGL.dir/main.cpp.o"
 },
 {
   "directory": "/Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/build",
-  "command": "/usr/bin/clang  -I/opt/homebrew/Cellar/glfw/3.4/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/glad/include -I/opt/homebrew/include -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -o CMakeFiles/main_OpenGL.dir/glad/src/glad.c.o -c /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/glad/src/glad.c",
-  "file": "/Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/glad/src/glad.c",
-  "output": "CMakeFiles/main_OpenGL.dir/glad/src/glad.c.o"
+  "command": "/usr/bin/clang++  -I/opt/homebrew/Cellar/glfw/3.4/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/glad/include -I/opt/homebrew/include -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -o CMakeFiles/Main_OpenGL.dir/src/Camera.cpp.o -c /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/Camera.cpp",
+  "file": "/Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/Camera.cpp",
+  "output": "CMakeFiles/Main_OpenGL.dir/src/Camera.cpp.o"
 }
 ]

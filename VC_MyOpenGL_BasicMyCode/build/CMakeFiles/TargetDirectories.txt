@@ -1,4 +1,4 @@
 /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/build/CMakeFiles/glad.dir
-/Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/build/CMakeFiles/main_OpenGL.dir
+/Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/build/CMakeFiles/Main_OpenGL.dir
 /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/build/CMakeFiles/edit_cache.dir
 /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/build/CMakeFiles/rebuild_cache.dir

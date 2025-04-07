@@ -40,16 +40,16 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "glad::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-glad-Debug-1d7f9fca3e082dab9205.json",
-					"name" : "glad",
+					"id" : "Main_OpenGL::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Main_OpenGL-Debug-9987192175b3e264c3d2.json",
+					"name" : "Main_OpenGL",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "main_OpenGL::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-main_OpenGL-Debug-1b81a1fbfae1e0763136.json",
-					"name" : "main_OpenGL",
+					"id" : "glad::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-glad-Debug-1d7f9fca3e082dab9205.json",
+					"name" : "glad",
 					"projectIndex" : 0
 				}
 			]

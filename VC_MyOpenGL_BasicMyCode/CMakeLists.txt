@@ -19,46 +19,23 @@ link_directories(${GLFW_LIBRARY_DIRS})
 # GLAD (수동 추가)
 add_library(glad STATIC glad/src/glad.c)
 
+# 실행파일 
+add_executable(Main_OpenGL
+    main.cpp
+    src/Camera.cpp
+)
 
-# src 디렉토리 안의 모든 .cpp 파일을 각각 실행파일로 빌드
-file(GLOB SOURCES "src/*.cpp")
+# 인클루드 디렉토리
+target_include_directories(Main_OpenGL PRIVATE
+    glad/include
+    ${GLFW_INCLUDE_DIRS}
+    /opt/homebrew/include  # macOS용 기본 include 경로
+    ${CMAKE_SOURCE_DIR}/include
+)
 
-
-
-#명시적으로 추가 하는 방식
-#add_executable(
-#   HelloTriangle_OpenGL 
-#    src/HelloTriangle.cpp
-#    )
-#target_link_libraries(
-#    HelloTriangle_OpenGL 
-#    glad 
-#    ${GLFW_LIBRARIES} 
-#    "-framework OpenGL"
-#    )
-
-
-foreach(source ${SOURCES})
-    get_filename_component(FILENAME ${source} NAME_WE)
-    
-    if(FILENAME MATCHES "skip")
-        message(STATUS "skipping ${FILENAME}")
-        continue()
-    endif()
-    
-    set(EXEC_NAME "${FILENAME}_OpenGL")
-
-    add_executable(${EXEC_NAME} ${source} glad/src/glad.c)
-
-    target_include_directories(${EXEC_NAME} PRIVATE
-        glad/include
-        ${GLFW_INCLUDE_DIRS}
-        /opt/homebrew/include
-    )
-
-    target_link_libraries(${EXEC_NAME}
-        glad
-        ${GLFW_LIBRARIES}
-        "-framework OpenGL"
-    )
-endforeach()
+# 링크 라이브러리 지정
+target_link_libraries(Main_OpenGL
+    glad
+    ${GLFW_LIBRARIES}
+    "-framework OpenGL"
+)
