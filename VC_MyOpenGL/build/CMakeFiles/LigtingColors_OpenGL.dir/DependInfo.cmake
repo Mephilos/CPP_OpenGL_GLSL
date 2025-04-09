@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/taehosim/Dev/Study/VC_MyOpenGL/glad/src/glad.c" "CMakeFiles/Camera_OpenGL.dir/glad/src/glad.c.o" "gcc" "CMakeFiles/Camera_OpenGL.dir/glad/src/glad.c.o.d"
-  "/Users/taehosim/Dev/Study/VC_MyOpenGL/src/Camera.cpp" "CMakeFiles/Camera_OpenGL.dir/src/Camera.cpp.o" "gcc" "CMakeFiles/Camera_OpenGL.dir/src/Camera.cpp.o.d"
+  "/Users/taehosim/Dev/Study/VC_MyOpenGL/glad/src/glad.c" "CMakeFiles/LigtingColors_OpenGL.dir/glad/src/glad.c.o" "gcc" "CMakeFiles/LigtingColors_OpenGL.dir/glad/src/glad.c.o.d"
+  "/Users/taehosim/Dev/Study/VC_MyOpenGL/src/LigtingColors.cpp" "CMakeFiles/LigtingColors_OpenGL.dir/src/LigtingColors.cpp.o" "gcc" "CMakeFiles/LigtingColors_OpenGL.dir/src/LigtingColors.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Camera_OpenGL"
+			"path" : "LigtingColors_OpenGL"
 		}
 	],
 	"backtrace" : 1,
@@ -139,7 +139,7 @@
 			"id" : "glad::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "Camera_OpenGL::@6890427a1f51a3e7e1df",
+	"id" : "LigtingColors_OpenGL::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -179,8 +179,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "Camera_OpenGL",
-	"nameOnDisk" : "Camera_OpenGL",
+	"name" : "LigtingColors_OpenGL",
+	"nameOnDisk" : "LigtingColors_OpenGL",
 	"paths" : 
 	{
 		"build" : ".",
@@ -202,7 +202,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/Camera.cpp",
+			"path" : "src/LigtingColors.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

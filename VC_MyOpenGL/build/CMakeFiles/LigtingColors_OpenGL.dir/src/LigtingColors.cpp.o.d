@@ -1,6 +1,6 @@
-CMakeFiles/Camera_OpenGL.dir/src/Camera.cpp.o: \
-  /Users/taehosim/Dev/Study/VC_MyOpenGL/src/Camera.cpp \
-  /Users/taehosim/Dev/Study/VC_MyOpenGL/src/../include/Shader.h \
+CMakeFiles/LigtingColors_OpenGL.dir/src/LigtingColors.cpp.o: \
+  /Users/taehosim/Dev/Study/VC_MyOpenGL/src/LigtingColors.cpp \
+  /Users/taehosim/Dev/Study/VC_MyOpenGL/include/Shader.h \
   /Users/taehosim/Dev/Study/VC_MyOpenGL/glad/include/glad/glad.h \
   /Users/taehosim/Dev/Study/VC_MyOpenGL/glad/include/KHR/khrplatform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/c++/v1/stdint.h \
@@ -1005,8 +1005,7 @@ CMakeFiles/Camera_OpenGL.dir/src/Camera.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/c++/v1/__filesystem/u8path.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/c++/v1/sstream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/c++/v1/iostream \
-  /Users/taehosim/Dev/Study/VC_MyOpenGL/src/../include/stb_image.h \
-  /opt/homebrew/Cellar/glfw/3.4/include/GLFW/glfw3.h \
+  /Users/taehosim/Dev/Study/VC_MyOpenGL/include/Camera.h \
   /opt/homebrew/include/glm/gtc/matrix_transform.hpp \
   /opt/homebrew/include/glm/gtc/../mat4x4.hpp \
   /opt/homebrew/include/glm/gtc/../vec2.hpp \
@@ -1031,6 +1030,8 @@ CMakeFiles/Camera_OpenGL.dir/src/Camera.cpp.o: \
   /opt/homebrew/include/glm/gtc/../geometric.hpp \
   /opt/homebrew/include/glm/gtc/../trigonometric.hpp \
   /opt/homebrew/include/glm/gtc/../matrix.hpp \
+  /Users/taehosim/Dev/Study/VC_MyOpenGL/include/stb_image.h \
+  /opt/homebrew/Cellar/glfw/3.4/include/GLFW/glfw3.h \
   /opt/homebrew/include/glm/gtc/type_ptr.hpp \
   /opt/homebrew/include/glm/gtc/../gtc/quaternion.hpp \
   /opt/homebrew/include/glm/gtc/../gtc/../gtc/constants.hpp \
