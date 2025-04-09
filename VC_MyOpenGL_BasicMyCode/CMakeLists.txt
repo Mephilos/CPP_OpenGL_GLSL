@@ -23,6 +23,14 @@ add_library(glad STATIC glad/src/glad.c)
 add_executable(Main_OpenGL
     main.cpp
     src/Camera.cpp
+    src/Input.cpp
+    src/Renderer.cpp
+    src/TextureLoader.cpp
+    src/ObjectLayout.cpp
+    src/SceneInitializer.cpp
+    src/ShaderManager.cpp
+    src/objMesh.cpp
+    src/GameManager.cpp
 )
 
 # 인클루드 디렉토리

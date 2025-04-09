@@ -1,4 +1,4 @@
-#include "../include/Camera.h"
+#include "Camera.h"
 
 // 생성자: 위치, 상단방향, 회전 초기값
 Camera::Camera(glm::vec3 position, glm::vec3 worldUp, float yaw, float pitch)
@@ -33,7 +33,7 @@ glm::mat4 Camera::GetViewMatrix() const
 
     return view;
 }
-    // zk메라 이동속도
+    // 카메라 wasd 이동 속도
 void Camera::ProcessKeyboard(Camera_Movement direction, float deltaTime) 
 {
     float velocity = 2.5f * deltaTime;
@@ -46,7 +46,7 @@ void Camera::ProcessKeyboard(Camera_Movement direction, float deltaTime)
     if (direction == RIGHT)
         Position += Right * velocity;
 }
-    //마우스 입력
+    //마우스 요 피치
 void Camera::ProcessMouseMovement(float xoffset, float yoffset, bool constrainPitch) 
 {
     xoffset *= 0.1f;

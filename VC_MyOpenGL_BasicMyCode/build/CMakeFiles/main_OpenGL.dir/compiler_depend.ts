@@ -1,2 +1,2 @@
 # CMAKE generated file: DO NOT EDIT!
-# Timestamp file for compiler generated dependencies management for main_OpenGL.
+# Timestamp file for compiler generated dependencies management for Main_OpenGL.

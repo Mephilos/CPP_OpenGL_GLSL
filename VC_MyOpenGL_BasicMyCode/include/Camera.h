@@ -1,4 +1,5 @@
 #pragma once
+
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 
@@ -38,7 +39,7 @@ public:
 
     //카보드 입력
     void ProcessKeyboard(Camera_Movement direction, float deltTime);
-    //마우스 컨트롤
+    //마우스 요 피치
     void ProcessMouseMovement(float xoffset, float yoffset, bool constrainPitch = true);
     //줌
     void ProcessMouseScroll(float yoffset);

@@ -214,6 +214,198 @@ src/Camera.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main_OpenGL.dir/build.make CMakeFiles/Main_OpenGL.dir/src/Camera.cpp.s
 .PHONY : src/Camera.cpp.s
 
+src/GameManager.o: src/GameManager.cpp.o
+.PHONY : src/GameManager.o
+
+# target to build an object file
+src/GameManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main_OpenGL.dir/build.make CMakeFiles/Main_OpenGL.dir/src/GameManager.cpp.o
+.PHONY : src/GameManager.cpp.o
+
+src/GameManager.i: src/GameManager.cpp.i
+.PHONY : src/GameManager.i
+
+# target to preprocess a source file
+src/GameManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main_OpenGL.dir/build.make CMakeFiles/Main_OpenGL.dir/src/GameManager.cpp.i
+.PHONY : src/GameManager.cpp.i
+
+src/GameManager.s: src/GameManager.cpp.s
+.PHONY : src/GameManager.s
+
+# target to generate assembly for a file
+src/GameManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main_OpenGL.dir/build.make CMakeFiles/Main_OpenGL.dir/src/GameManager.cpp.s
+.PHONY : src/GameManager.cpp.s
+
+src/Input.o: src/Input.cpp.o
+.PHONY : src/Input.o
+
+# target to build an object file
+src/Input.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main_OpenGL.dir/build.make CMakeFiles/Main_OpenGL.dir/src/Input.cpp.o
+.PHONY : src/Input.cpp.o
+
+src/Input.i: src/Input.cpp.i
+.PHONY : src/Input.i
+
+# target to preprocess a source file
+src/Input.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main_OpenGL.dir/build.make CMakeFiles/Main_OpenGL.dir/src/Input.cpp.i
+.PHONY : src/Input.cpp.i
+
+src/Input.s: src/Input.cpp.s
+.PHONY : src/Input.s
+
+# target to generate assembly for a file
+src/Input.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main_OpenGL.dir/build.make CMakeFiles/Main_OpenGL.dir/src/Input.cpp.s
+.PHONY : src/Input.cpp.s
+
+src/ObjectLayout.o: src/ObjectLayout.cpp.o
+.PHONY : src/ObjectLayout.o
+
+# target to build an object file
+src/ObjectLayout.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main_OpenGL.dir/build.make CMakeFiles/Main_OpenGL.dir/src/ObjectLayout.cpp.o
+.PHONY : src/ObjectLayout.cpp.o
+
+src/ObjectLayout.i: src/ObjectLayout.cpp.i
+.PHONY : src/ObjectLayout.i
+
+# target to preprocess a source file
+src/ObjectLayout.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main_OpenGL.dir/build.make CMakeFiles/Main_OpenGL.dir/src/ObjectLayout.cpp.i
+.PHONY : src/ObjectLayout.cpp.i
+
+src/ObjectLayout.s: src/ObjectLayout.cpp.s
+.PHONY : src/ObjectLayout.s
+
+# target to generate assembly for a file
+src/ObjectLayout.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main_OpenGL.dir/build.make CMakeFiles/Main_OpenGL.dir/src/ObjectLayout.cpp.s
+.PHONY : src/ObjectLayout.cpp.s
+
+src/Renderer.o: src/Renderer.cpp.o
+.PHONY : src/Renderer.o
+
+# target to build an object file
+src/Renderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main_OpenGL.dir/build.make CMakeFiles/Main_OpenGL.dir/src/Renderer.cpp.o
+.PHONY : src/Renderer.cpp.o
+
+src/Renderer.i: src/Renderer.cpp.i
+.PHONY : src/Renderer.i
+
+# target to preprocess a source file
+src/Renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main_OpenGL.dir/build.make CMakeFiles/Main_OpenGL.dir/src/Renderer.cpp.i
+.PHONY : src/Renderer.cpp.i
+
+src/Renderer.s: src/Renderer.cpp.s
+.PHONY : src/Renderer.s
+
+# target to generate assembly for a file
+src/Renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main_OpenGL.dir/build.make CMakeFiles/Main_OpenGL.dir/src/Renderer.cpp.s
+.PHONY : src/Renderer.cpp.s
+
+src/SceneInitializer.o: src/SceneInitializer.cpp.o
+.PHONY : src/SceneInitializer.o
+
+# target to build an object file
+src/SceneInitializer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main_OpenGL.dir/build.make CMakeFiles/Main_OpenGL.dir/src/SceneInitializer.cpp.o
+.PHONY : src/SceneInitializer.cpp.o
+
+src/SceneInitializer.i: src/SceneInitializer.cpp.i
+.PHONY : src/SceneInitializer.i
+
+# target to preprocess a source file
+src/SceneInitializer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main_OpenGL.dir/build.make CMakeFiles/Main_OpenGL.dir/src/SceneInitializer.cpp.i
+.PHONY : src/SceneInitializer.cpp.i
+
+src/SceneInitializer.s: src/SceneInitializer.cpp.s
+.PHONY : src/SceneInitializer.s
+
+# target to generate assembly for a file
+src/SceneInitializer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main_OpenGL.dir/build.make CMakeFiles/Main_OpenGL.dir/src/SceneInitializer.cpp.s
+.PHONY : src/SceneInitializer.cpp.s
+
+src/ShaderManager.o: src/ShaderManager.cpp.o
+.PHONY : src/ShaderManager.o
+
+# target to build an object file
+src/ShaderManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main_OpenGL.dir/build.make CMakeFiles/Main_OpenGL.dir/src/ShaderManager.cpp.o
+.PHONY : src/ShaderManager.cpp.o
+
+src/ShaderManager.i: src/ShaderManager.cpp.i
+.PHONY : src/ShaderManager.i
+
+# target to preprocess a source file
+src/ShaderManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main_OpenGL.dir/build.make CMakeFiles/Main_OpenGL.dir/src/ShaderManager.cpp.i
+.PHONY : src/ShaderManager.cpp.i
+
+src/ShaderManager.s: src/ShaderManager.cpp.s
+.PHONY : src/ShaderManager.s
+
+# target to generate assembly for a file
+src/ShaderManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main_OpenGL.dir/build.make CMakeFiles/Main_OpenGL.dir/src/ShaderManager.cpp.s
+.PHONY : src/ShaderManager.cpp.s
+
+src/TextureLoader.o: src/TextureLoader.cpp.o
+.PHONY : src/TextureLoader.o
+
+# target to build an object file
+src/TextureLoader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main_OpenGL.dir/build.make CMakeFiles/Main_OpenGL.dir/src/TextureLoader.cpp.o
+.PHONY : src/TextureLoader.cpp.o
+
+src/TextureLoader.i: src/TextureLoader.cpp.i
+.PHONY : src/TextureLoader.i
+
+# target to preprocess a source file
+src/TextureLoader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main_OpenGL.dir/build.make CMakeFiles/Main_OpenGL.dir/src/TextureLoader.cpp.i
+.PHONY : src/TextureLoader.cpp.i
+
+src/TextureLoader.s: src/TextureLoader.cpp.s
+.PHONY : src/TextureLoader.s
+
+# target to generate assembly for a file
+src/TextureLoader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main_OpenGL.dir/build.make CMakeFiles/Main_OpenGL.dir/src/TextureLoader.cpp.s
+.PHONY : src/TextureLoader.cpp.s
+
+src/objMesh.o: src/objMesh.cpp.o
+.PHONY : src/objMesh.o
+
+# target to build an object file
+src/objMesh.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main_OpenGL.dir/build.make CMakeFiles/Main_OpenGL.dir/src/objMesh.cpp.o
+.PHONY : src/objMesh.cpp.o
+
+src/objMesh.i: src/objMesh.cpp.i
+.PHONY : src/objMesh.i
+
+# target to preprocess a source file
+src/objMesh.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main_OpenGL.dir/build.make CMakeFiles/Main_OpenGL.dir/src/objMesh.cpp.i
+.PHONY : src/objMesh.cpp.i
+
+src/objMesh.s: src/objMesh.cpp.s
+.PHONY : src/objMesh.s
+
+# target to generate assembly for a file
+src/objMesh.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main_OpenGL.dir/build.make CMakeFiles/Main_OpenGL.dir/src/objMesh.cpp.s
+.PHONY : src/objMesh.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -233,6 +425,30 @@ help:
 	@echo "... src/Camera.o"
 	@echo "... src/Camera.i"
 	@echo "... src/Camera.s"
+	@echo "... src/GameManager.o"
+	@echo "... src/GameManager.i"
+	@echo "... src/GameManager.s"
+	@echo "... src/Input.o"
+	@echo "... src/Input.i"
+	@echo "... src/Input.s"
+	@echo "... src/ObjectLayout.o"
+	@echo "... src/ObjectLayout.i"
+	@echo "... src/ObjectLayout.s"
+	@echo "... src/Renderer.o"
+	@echo "... src/Renderer.i"
+	@echo "... src/Renderer.s"
+	@echo "... src/SceneInitializer.o"
+	@echo "... src/SceneInitializer.i"
+	@echo "... src/SceneInitializer.s"
+	@echo "... src/ShaderManager.o"
+	@echo "... src/ShaderManager.i"
+	@echo "... src/ShaderManager.s"
+	@echo "... src/TextureLoader.o"
+	@echo "... src/TextureLoader.i"
+	@echo "... src/TextureLoader.s"
+	@echo "... src/objMesh.o"
+	@echo "... src/objMesh.i"
+	@echo "... src/objMesh.s"
 .PHONY : help
 
 

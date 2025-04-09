@@ -1,6 +1,6 @@
 CMakeFiles/Main_OpenGL.dir/src/Camera.cpp.o: \
   /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/Camera.cpp \
-  /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/../include/Camera.h \
+  /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/include/Camera.h \
   /opt/homebrew/include/glm/glm.hpp \
   /opt/homebrew/include/glm/detail/_fixes.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/c++/v1/cmath \

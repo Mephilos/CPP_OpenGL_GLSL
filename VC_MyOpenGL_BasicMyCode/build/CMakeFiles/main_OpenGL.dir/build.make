@@ -100,20 +100,148 @@ CMakeFiles/Main_OpenGL.dir/src/Camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Main_OpenGL.dir/src/Camera.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/Camera.cpp -o CMakeFiles/Main_OpenGL.dir/src/Camera.cpp.s
 
+CMakeFiles/Main_OpenGL.dir/src/Input.cpp.o: CMakeFiles/Main_OpenGL.dir/flags.make
+CMakeFiles/Main_OpenGL.dir/src/Input.cpp.o: /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/Input.cpp
+CMakeFiles/Main_OpenGL.dir/src/Input.cpp.o: CMakeFiles/Main_OpenGL.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Main_OpenGL.dir/src/Input.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Main_OpenGL.dir/src/Input.cpp.o -MF CMakeFiles/Main_OpenGL.dir/src/Input.cpp.o.d -o CMakeFiles/Main_OpenGL.dir/src/Input.cpp.o -c /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/Input.cpp
+
+CMakeFiles/Main_OpenGL.dir/src/Input.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Main_OpenGL.dir/src/Input.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/Input.cpp > CMakeFiles/Main_OpenGL.dir/src/Input.cpp.i
+
+CMakeFiles/Main_OpenGL.dir/src/Input.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Main_OpenGL.dir/src/Input.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/Input.cpp -o CMakeFiles/Main_OpenGL.dir/src/Input.cpp.s
+
+CMakeFiles/Main_OpenGL.dir/src/Renderer.cpp.o: CMakeFiles/Main_OpenGL.dir/flags.make
+CMakeFiles/Main_OpenGL.dir/src/Renderer.cpp.o: /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/Renderer.cpp
+CMakeFiles/Main_OpenGL.dir/src/Renderer.cpp.o: CMakeFiles/Main_OpenGL.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Main_OpenGL.dir/src/Renderer.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Main_OpenGL.dir/src/Renderer.cpp.o -MF CMakeFiles/Main_OpenGL.dir/src/Renderer.cpp.o.d -o CMakeFiles/Main_OpenGL.dir/src/Renderer.cpp.o -c /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/Renderer.cpp
+
+CMakeFiles/Main_OpenGL.dir/src/Renderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Main_OpenGL.dir/src/Renderer.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/Renderer.cpp > CMakeFiles/Main_OpenGL.dir/src/Renderer.cpp.i
+
+CMakeFiles/Main_OpenGL.dir/src/Renderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Main_OpenGL.dir/src/Renderer.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/Renderer.cpp -o CMakeFiles/Main_OpenGL.dir/src/Renderer.cpp.s
+
+CMakeFiles/Main_OpenGL.dir/src/TextureLoader.cpp.o: CMakeFiles/Main_OpenGL.dir/flags.make
+CMakeFiles/Main_OpenGL.dir/src/TextureLoader.cpp.o: /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/TextureLoader.cpp
+CMakeFiles/Main_OpenGL.dir/src/TextureLoader.cpp.o: CMakeFiles/Main_OpenGL.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Main_OpenGL.dir/src/TextureLoader.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Main_OpenGL.dir/src/TextureLoader.cpp.o -MF CMakeFiles/Main_OpenGL.dir/src/TextureLoader.cpp.o.d -o CMakeFiles/Main_OpenGL.dir/src/TextureLoader.cpp.o -c /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/TextureLoader.cpp
+
+CMakeFiles/Main_OpenGL.dir/src/TextureLoader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Main_OpenGL.dir/src/TextureLoader.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/TextureLoader.cpp > CMakeFiles/Main_OpenGL.dir/src/TextureLoader.cpp.i
+
+CMakeFiles/Main_OpenGL.dir/src/TextureLoader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Main_OpenGL.dir/src/TextureLoader.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/TextureLoader.cpp -o CMakeFiles/Main_OpenGL.dir/src/TextureLoader.cpp.s
+
+CMakeFiles/Main_OpenGL.dir/src/ObjectLayout.cpp.o: CMakeFiles/Main_OpenGL.dir/flags.make
+CMakeFiles/Main_OpenGL.dir/src/ObjectLayout.cpp.o: /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/ObjectLayout.cpp
+CMakeFiles/Main_OpenGL.dir/src/ObjectLayout.cpp.o: CMakeFiles/Main_OpenGL.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Main_OpenGL.dir/src/ObjectLayout.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Main_OpenGL.dir/src/ObjectLayout.cpp.o -MF CMakeFiles/Main_OpenGL.dir/src/ObjectLayout.cpp.o.d -o CMakeFiles/Main_OpenGL.dir/src/ObjectLayout.cpp.o -c /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/ObjectLayout.cpp
+
+CMakeFiles/Main_OpenGL.dir/src/ObjectLayout.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Main_OpenGL.dir/src/ObjectLayout.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/ObjectLayout.cpp > CMakeFiles/Main_OpenGL.dir/src/ObjectLayout.cpp.i
+
+CMakeFiles/Main_OpenGL.dir/src/ObjectLayout.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Main_OpenGL.dir/src/ObjectLayout.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/ObjectLayout.cpp -o CMakeFiles/Main_OpenGL.dir/src/ObjectLayout.cpp.s
+
+CMakeFiles/Main_OpenGL.dir/src/SceneInitializer.cpp.o: CMakeFiles/Main_OpenGL.dir/flags.make
+CMakeFiles/Main_OpenGL.dir/src/SceneInitializer.cpp.o: /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/SceneInitializer.cpp
+CMakeFiles/Main_OpenGL.dir/src/SceneInitializer.cpp.o: CMakeFiles/Main_OpenGL.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Main_OpenGL.dir/src/SceneInitializer.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Main_OpenGL.dir/src/SceneInitializer.cpp.o -MF CMakeFiles/Main_OpenGL.dir/src/SceneInitializer.cpp.o.d -o CMakeFiles/Main_OpenGL.dir/src/SceneInitializer.cpp.o -c /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/SceneInitializer.cpp
+
+CMakeFiles/Main_OpenGL.dir/src/SceneInitializer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Main_OpenGL.dir/src/SceneInitializer.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/SceneInitializer.cpp > CMakeFiles/Main_OpenGL.dir/src/SceneInitializer.cpp.i
+
+CMakeFiles/Main_OpenGL.dir/src/SceneInitializer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Main_OpenGL.dir/src/SceneInitializer.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/SceneInitializer.cpp -o CMakeFiles/Main_OpenGL.dir/src/SceneInitializer.cpp.s
+
+CMakeFiles/Main_OpenGL.dir/src/ShaderManager.cpp.o: CMakeFiles/Main_OpenGL.dir/flags.make
+CMakeFiles/Main_OpenGL.dir/src/ShaderManager.cpp.o: /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/ShaderManager.cpp
+CMakeFiles/Main_OpenGL.dir/src/ShaderManager.cpp.o: CMakeFiles/Main_OpenGL.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Main_OpenGL.dir/src/ShaderManager.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Main_OpenGL.dir/src/ShaderManager.cpp.o -MF CMakeFiles/Main_OpenGL.dir/src/ShaderManager.cpp.o.d -o CMakeFiles/Main_OpenGL.dir/src/ShaderManager.cpp.o -c /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/ShaderManager.cpp
+
+CMakeFiles/Main_OpenGL.dir/src/ShaderManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Main_OpenGL.dir/src/ShaderManager.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/ShaderManager.cpp > CMakeFiles/Main_OpenGL.dir/src/ShaderManager.cpp.i
+
+CMakeFiles/Main_OpenGL.dir/src/ShaderManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Main_OpenGL.dir/src/ShaderManager.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/ShaderManager.cpp -o CMakeFiles/Main_OpenGL.dir/src/ShaderManager.cpp.s
+
+CMakeFiles/Main_OpenGL.dir/src/objMesh.cpp.o: CMakeFiles/Main_OpenGL.dir/flags.make
+CMakeFiles/Main_OpenGL.dir/src/objMesh.cpp.o: /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/objMesh.cpp
+CMakeFiles/Main_OpenGL.dir/src/objMesh.cpp.o: CMakeFiles/Main_OpenGL.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Main_OpenGL.dir/src/objMesh.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Main_OpenGL.dir/src/objMesh.cpp.o -MF CMakeFiles/Main_OpenGL.dir/src/objMesh.cpp.o.d -o CMakeFiles/Main_OpenGL.dir/src/objMesh.cpp.o -c /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/objMesh.cpp
+
+CMakeFiles/Main_OpenGL.dir/src/objMesh.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Main_OpenGL.dir/src/objMesh.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/objMesh.cpp > CMakeFiles/Main_OpenGL.dir/src/objMesh.cpp.i
+
+CMakeFiles/Main_OpenGL.dir/src/objMesh.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Main_OpenGL.dir/src/objMesh.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/objMesh.cpp -o CMakeFiles/Main_OpenGL.dir/src/objMesh.cpp.s
+
+CMakeFiles/Main_OpenGL.dir/src/GameManager.cpp.o: CMakeFiles/Main_OpenGL.dir/flags.make
+CMakeFiles/Main_OpenGL.dir/src/GameManager.cpp.o: /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/GameManager.cpp
+CMakeFiles/Main_OpenGL.dir/src/GameManager.cpp.o: CMakeFiles/Main_OpenGL.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Main_OpenGL.dir/src/GameManager.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Main_OpenGL.dir/src/GameManager.cpp.o -MF CMakeFiles/Main_OpenGL.dir/src/GameManager.cpp.o.d -o CMakeFiles/Main_OpenGL.dir/src/GameManager.cpp.o -c /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/GameManager.cpp
+
+CMakeFiles/Main_OpenGL.dir/src/GameManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Main_OpenGL.dir/src/GameManager.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/GameManager.cpp > CMakeFiles/Main_OpenGL.dir/src/GameManager.cpp.i
+
+CMakeFiles/Main_OpenGL.dir/src/GameManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Main_OpenGL.dir/src/GameManager.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/src/GameManager.cpp -o CMakeFiles/Main_OpenGL.dir/src/GameManager.cpp.s
+
 # Object files for target Main_OpenGL
 Main_OpenGL_OBJECTS = \
 "CMakeFiles/Main_OpenGL.dir/main.cpp.o" \
-"CMakeFiles/Main_OpenGL.dir/src/Camera.cpp.o"
+"CMakeFiles/Main_OpenGL.dir/src/Camera.cpp.o" \
+"CMakeFiles/Main_OpenGL.dir/src/Input.cpp.o" \
+"CMakeFiles/Main_OpenGL.dir/src/Renderer.cpp.o" \
+"CMakeFiles/Main_OpenGL.dir/src/TextureLoader.cpp.o" \
+"CMakeFiles/Main_OpenGL.dir/src/ObjectLayout.cpp.o" \
+"CMakeFiles/Main_OpenGL.dir/src/SceneInitializer.cpp.o" \
+"CMakeFiles/Main_OpenGL.dir/src/ShaderManager.cpp.o" \
+"CMakeFiles/Main_OpenGL.dir/src/objMesh.cpp.o" \
+"CMakeFiles/Main_OpenGL.dir/src/GameManager.cpp.o"
 
 # External object files for target Main_OpenGL
 Main_OpenGL_EXTERNAL_OBJECTS =
 
 Main_OpenGL: CMakeFiles/Main_OpenGL.dir/main.cpp.o
 Main_OpenGL: CMakeFiles/Main_OpenGL.dir/src/Camera.cpp.o
+Main_OpenGL: CMakeFiles/Main_OpenGL.dir/src/Input.cpp.o
+Main_OpenGL: CMakeFiles/Main_OpenGL.dir/src/Renderer.cpp.o
+Main_OpenGL: CMakeFiles/Main_OpenGL.dir/src/TextureLoader.cpp.o
+Main_OpenGL: CMakeFiles/Main_OpenGL.dir/src/ObjectLayout.cpp.o
+Main_OpenGL: CMakeFiles/Main_OpenGL.dir/src/SceneInitializer.cpp.o
+Main_OpenGL: CMakeFiles/Main_OpenGL.dir/src/ShaderManager.cpp.o
+Main_OpenGL: CMakeFiles/Main_OpenGL.dir/src/objMesh.cpp.o
+Main_OpenGL: CMakeFiles/Main_OpenGL.dir/src/GameManager.cpp.o
 Main_OpenGL: CMakeFiles/Main_OpenGL.dir/build.make
 Main_OpenGL: libglad.a
 Main_OpenGL: CMakeFiles/Main_OpenGL.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Main_OpenGL"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable Main_OpenGL"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Main_OpenGL.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -3,6 +3,7 @@
         {
             "name": "Mac",
             "includePath": [
+                "${workspaceFolder}/include",
                 "${workspaceFolder}/glad/include",
                 "/opt/homebrew/include"
             ],

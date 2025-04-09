@@ -1005,7 +1005,6 @@ CMakeFiles/Main_OpenGL.dir/main.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/c++/v1/__filesystem/u8path.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/c++/v1/sstream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/c++/v1/iostream \
-  /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/include/stb_image.h \
   /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/include/Camera.h \
   /opt/homebrew/include/glm/gtc/matrix_transform.hpp \
   /opt/homebrew/include/glm/gtc/../mat4x4.hpp \
@@ -1031,7 +1030,16 @@ CMakeFiles/Main_OpenGL.dir/main.cpp.o: \
   /opt/homebrew/include/glm/gtc/../geometric.hpp \
   /opt/homebrew/include/glm/gtc/../trigonometric.hpp \
   /opt/homebrew/include/glm/gtc/../matrix.hpp \
+  /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/include/Input.h \
   /opt/homebrew/Cellar/glfw/3.4/include/GLFW/glfw3.h \
+  /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/include/Renderer.h \
+  /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/include/stb_image.h \
+  /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/include/TextureLoader.h \
+  /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/include/ObjectLayout.h \
+  /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/include/SceneInitializer.h \
+  /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/include/ShaderManager.h \
+  /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/include/ObjMesh.h \
+  /Users/taehosim/Dev/Study/VC_MyOpenGL_BasicMyCode/include/GameManager.h \
   /opt/homebrew/include/glm/gtc/type_ptr.hpp \
   /opt/homebrew/include/glm/gtc/../gtc/quaternion.hpp \
   /opt/homebrew/include/glm/gtc/../gtc/../gtc/constants.hpp \
