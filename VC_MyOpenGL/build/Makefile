@@ -130,17 +130,17 @@ glad/fast:
 .PHONY : glad/fast
 
 #=============================================================================
-# Target rules for targets named LigtingColors_OpenGL
+# Target rules for targets named LightingBasic_OpenGL
 
 # Build rule for target.
-LigtingColors_OpenGL: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LigtingColors_OpenGL
-.PHONY : LigtingColors_OpenGL
+LightingBasic_OpenGL: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LightingBasic_OpenGL
+.PHONY : LightingBasic_OpenGL
 
 # fast build rule for target.
-LigtingColors_OpenGL/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LigtingColors_OpenGL.dir/build.make CMakeFiles/LigtingColors_OpenGL.dir/build
-.PHONY : LigtingColors_OpenGL/fast
+LightingBasic_OpenGL/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightingBasic_OpenGL.dir/build.make CMakeFiles/LightingBasic_OpenGL.dir/build
+.PHONY : LightingBasic_OpenGL/fast
 
 glad/src/glad.o: glad/src/glad.c.o
 .PHONY : glad/src/glad.o
@@ -148,7 +148,7 @@ glad/src/glad.o: glad/src/glad.c.o
 # target to build an object file
 glad/src/glad.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/glad/src/glad.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LigtingColors_OpenGL.dir/build.make CMakeFiles/LigtingColors_OpenGL.dir/glad/src/glad.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightingBasic_OpenGL.dir/build.make CMakeFiles/LightingBasic_OpenGL.dir/glad/src/glad.c.o
 .PHONY : glad/src/glad.c.o
 
 glad/src/glad.i: glad/src/glad.c.i
@@ -157,7 +157,7 @@ glad/src/glad.i: glad/src/glad.c.i
 # target to preprocess a source file
 glad/src/glad.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/glad/src/glad.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LigtingColors_OpenGL.dir/build.make CMakeFiles/LigtingColors_OpenGL.dir/glad/src/glad.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightingBasic_OpenGL.dir/build.make CMakeFiles/LightingBasic_OpenGL.dir/glad/src/glad.c.i
 .PHONY : glad/src/glad.c.i
 
 glad/src/glad.s: glad/src/glad.c.s
@@ -166,32 +166,32 @@ glad/src/glad.s: glad/src/glad.c.s
 # target to generate assembly for a file
 glad/src/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/glad/src/glad.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LigtingColors_OpenGL.dir/build.make CMakeFiles/LigtingColors_OpenGL.dir/glad/src/glad.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightingBasic_OpenGL.dir/build.make CMakeFiles/LightingBasic_OpenGL.dir/glad/src/glad.c.s
 .PHONY : glad/src/glad.c.s
 
-src/LigtingColors.o: src/LigtingColors.cpp.o
-.PHONY : src/LigtingColors.o
+src/LightingBasic.o: src/LightingBasic.cpp.o
+.PHONY : src/LightingBasic.o
 
 # target to build an object file
-src/LigtingColors.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LigtingColors_OpenGL.dir/build.make CMakeFiles/LigtingColors_OpenGL.dir/src/LigtingColors.cpp.o
-.PHONY : src/LigtingColors.cpp.o
+src/LightingBasic.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightingBasic_OpenGL.dir/build.make CMakeFiles/LightingBasic_OpenGL.dir/src/LightingBasic.cpp.o
+.PHONY : src/LightingBasic.cpp.o
 
-src/LigtingColors.i: src/LigtingColors.cpp.i
-.PHONY : src/LigtingColors.i
+src/LightingBasic.i: src/LightingBasic.cpp.i
+.PHONY : src/LightingBasic.i
 
 # target to preprocess a source file
-src/LigtingColors.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LigtingColors_OpenGL.dir/build.make CMakeFiles/LigtingColors_OpenGL.dir/src/LigtingColors.cpp.i
-.PHONY : src/LigtingColors.cpp.i
+src/LightingBasic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightingBasic_OpenGL.dir/build.make CMakeFiles/LightingBasic_OpenGL.dir/src/LightingBasic.cpp.i
+.PHONY : src/LightingBasic.cpp.i
 
-src/LigtingColors.s: src/LigtingColors.cpp.s
-.PHONY : src/LigtingColors.s
+src/LightingBasic.s: src/LightingBasic.cpp.s
+.PHONY : src/LightingBasic.s
 
 # target to generate assembly for a file
-src/LigtingColors.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LigtingColors_OpenGL.dir/build.make CMakeFiles/LigtingColors_OpenGL.dir/src/LigtingColors.cpp.s
-.PHONY : src/LigtingColors.cpp.s
+src/LightingBasic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightingBasic_OpenGL.dir/build.make CMakeFiles/LightingBasic_OpenGL.dir/src/LightingBasic.cpp.s
+.PHONY : src/LightingBasic.cpp.s
 
 # Help Target
 help:
@@ -201,14 +201,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... LigtingColors_OpenGL"
+	@echo "... LightingBasic_OpenGL"
 	@echo "... glad"
 	@echo "... glad/src/glad.o"
 	@echo "... glad/src/glad.i"
 	@echo "... glad/src/glad.s"
-	@echo "... src/LigtingColors.o"
-	@echo "... src/LigtingColors.i"
-	@echo "... src/LigtingColors.s"
+	@echo "... src/LightingBasic.o"
+	@echo "... src/LightingBasic.i"
+	@echo "... src/LightingBasic.s"
 .PHONY : help
 
 

@@ -40,9 +40,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "LigtingColors_OpenGL::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-LigtingColors_OpenGL-Debug-5ae81365931690a8cfa8.json",
-					"name" : "LigtingColors_OpenGL",
+					"id" : "LightingBasic_OpenGL::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LightingBasic_OpenGL-Debug-2699b7686fa9b3a8716e.json",
+					"name" : "LightingBasic_OpenGL",
 					"projectIndex" : 0
 				},
 				{

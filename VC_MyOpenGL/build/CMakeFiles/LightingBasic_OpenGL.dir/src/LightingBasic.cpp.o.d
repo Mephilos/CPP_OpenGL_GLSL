@@ -1,5 +1,5 @@
-CMakeFiles/LigtingColors_OpenGL.dir/src/LigtingColors.cpp.o: \
-  /Users/taehosim/Dev/Study/VC_MyOpenGL/src/LigtingColors.cpp \
+CMakeFiles/LightingBasic_OpenGL.dir/src/LightingBasic.cpp.o: \
+  /Users/taehosim/Dev/Study/VC_MyOpenGL/src/LightingBasic.cpp \
   /Users/taehosim/Dev/Study/VC_MyOpenGL/include/Shader.h \
   /Users/taehosim/Dev/Study/VC_MyOpenGL/glad/include/glad/glad.h \
   /Users/taehosim/Dev/Study/VC_MyOpenGL/glad/include/KHR/khrplatform.h \
