@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/lightingFinal_OpenGL.dir/glad/src/glad.c.o"
-  "CMakeFiles/lightingFinal_OpenGL.dir/glad/src/glad.c.o.d"
   "CMakeFiles/lightingFinal_OpenGL.dir/src/lightingFinal.cpp.o"
   "CMakeFiles/lightingFinal_OpenGL.dir/src/lightingFinal.cpp.o.d"
   "lightingFinal_OpenGL"
@@ -8,6 +6,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang C CXX)
+foreach(lang CXX)
   include(CMakeFiles/lightingFinal_OpenGL.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

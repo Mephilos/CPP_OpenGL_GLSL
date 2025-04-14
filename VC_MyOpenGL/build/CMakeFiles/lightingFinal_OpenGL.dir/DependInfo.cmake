@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/taehosim/Dev/Study/VC_MyOpenGL/glad/src/glad.c" "CMakeFiles/lightingFinal_OpenGL.dir/glad/src/glad.c.o" "gcc" "CMakeFiles/lightingFinal_OpenGL.dir/glad/src/glad.c.o.d"
   "/Users/taehosim/Dev/Study/VC_MyOpenGL/src/lightingFinal.cpp" "CMakeFiles/lightingFinal_OpenGL.dir/src/lightingFinal.cpp.o" "gcc" "CMakeFiles/lightingFinal_OpenGL.dir/src/lightingFinal.cpp.o.d"
   )
 

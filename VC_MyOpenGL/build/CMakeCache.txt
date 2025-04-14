@@ -26,8 +26,8 @@ CMAKE_BUILD_TYPE:STRING=Debug
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
-//CXX compiler
-CMAKE_CXX_COMPILER:STRING=/usr/bin/clang++
+//No help, variable specified on the command line.
+CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/clang++
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -44,8 +44,8 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-//C compiler
-CMAKE_C_COMPILER:STRING=/usr/bin/clang
+//No help, variable specified on the command line.
+CMAKE_C_COMPILER:FILEPATH=/usr/bin/clang
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -227,8 +227,14 @@ PKG_CONFIG_ARGN:STRING=
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=/opt/homebrew/bin/pkg-config
 
+//The directory containing a CMake configuration file for assimp.
+assimp_DIR:PATH=/opt/homebrew/lib/cmake/assimp-5.4
+
 //The directory containing a CMake configuration file for glm.
 glm_DIR:PATH=/opt/homebrew/share/glm
+
+//Path to a library.
+pkgcfg_lib_ASSIMP_assimp:FILEPATH=/opt/homebrew/Cellar/assimp/5.4.3/lib/libassimp.dylib
 
 //Path to a library.
 pkgcfg_lib_GLFW_glfw:FILEPATH=/opt/homebrew/Cellar/glfw/3.4/lib/libglfw.dylib
@@ -238,6 +244,41 @@ pkgcfg_lib_GLFW_glfw:FILEPATH=/opt/homebrew/Cellar/glfw/3.4/lib/libglfw.dylib
 # INTERNAL cache entries
 ########################
 
+ASSIMP_CFLAGS:INTERNAL=-I/opt/homebrew/Cellar/assimp/5.4.3/include
+ASSIMP_CFLAGS_I:INTERNAL=
+ASSIMP_CFLAGS_OTHER:INTERNAL=
+ASSIMP_FOUND:INTERNAL=1
+ASSIMP_INCLUDEDIR:INTERNAL=/opt/homebrew/Cellar/assimp/5.4.3/include
+ASSIMP_INCLUDE_DIRS:INTERNAL=/opt/homebrew/Cellar/assimp/5.4.3/include
+ASSIMP_LDFLAGS:INTERNAL=-L/opt/homebrew/Cellar/assimp/5.4.3/lib;-lassimp
+ASSIMP_LDFLAGS_OTHER:INTERNAL=
+ASSIMP_LIBDIR:INTERNAL=/opt/homebrew/Cellar/assimp/5.4.3/lib
+ASSIMP_LIBRARIES:INTERNAL=assimp
+ASSIMP_LIBRARY_DIRS:INTERNAL=/opt/homebrew/Cellar/assimp/5.4.3/lib
+ASSIMP_LIBS:INTERNAL=
+ASSIMP_LIBS_L:INTERNAL=
+ASSIMP_LIBS_OTHER:INTERNAL=
+ASSIMP_LIBS_PATHS:INTERNAL=
+ASSIMP_MODULE_NAME:INTERNAL=assimp
+ASSIMP_PREFIX:INTERNAL=
+ASSIMP_STATIC_CFLAGS:INTERNAL=-I/opt/homebrew/Cellar/assimp/5.4.3/include
+ASSIMP_STATIC_CFLAGS_I:INTERNAL=
+ASSIMP_STATIC_CFLAGS_OTHER:INTERNAL=
+ASSIMP_STATIC_INCLUDE_DIRS:INTERNAL=/opt/homebrew/Cellar/assimp/5.4.3/include
+ASSIMP_STATIC_LDFLAGS:INTERNAL=-L/opt/homebrew/Cellar/assimp/5.4.3/lib;-lassimp;-lz
+ASSIMP_STATIC_LDFLAGS_OTHER:INTERNAL=
+ASSIMP_STATIC_LIBDIR:INTERNAL=
+ASSIMP_STATIC_LIBRARIES:INTERNAL=assimp;z
+ASSIMP_STATIC_LIBRARY_DIRS:INTERNAL=/opt/homebrew/Cellar/assimp/5.4.3/lib
+ASSIMP_STATIC_LIBS:INTERNAL=
+ASSIMP_STATIC_LIBS_L:INTERNAL=
+ASSIMP_STATIC_LIBS_OTHER:INTERNAL=
+ASSIMP_STATIC_LIBS_PATHS:INTERNAL=
+ASSIMP_VERSION:INTERNAL=5.4.3
+ASSIMP_assimp_INCLUDEDIR:INTERNAL=
+ASSIMP_assimp_LIBDIR:INTERNAL=
+ASSIMP_assimp_PREFIX:INTERNAL=
+ASSIMP_assimp_VERSION:INTERNAL=
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -416,8 +457,11 @@ GLFW_glfw3_VERSION:INTERNAL=
 PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
+__pkg_config_checked_ASSIMP:INTERNAL=1
 __pkg_config_checked_GLFW:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_ASSIMP_assimp
+pkgcfg_lib_ASSIMP_assimp-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_GLFW_glfw
 pkgcfg_lib_GLFW_glfw-ADVANCED:INTERNAL=1
-prefix_result:INTERNAL=/opt/homebrew/Cellar/glfw/3.4/lib
+prefix_result:INTERNAL=/opt/homebrew/Cellar/assimp/5.4.3/lib
 

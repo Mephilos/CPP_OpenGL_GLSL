@@ -6,19 +6,19 @@ set(CMAKE_CXX_STANDARD 17)
 # GLFW
 find_package(PkgConfig REQUIRED)
 pkg_search_module(GLFW REQUIRED glfw3)
+pkg_search_module(ASSIMP REQUIRED assimp)
 find_package(glm CONFIG REQUIRED)
 
-
-include_directories(
-    ${GLFW_INCLUDE_DIRS}
-    ${CMAKE_SOURCE_DIR}/include
-    ${CMAKE_SOURCE_DIR}/glad/include
-)
-link_directories(${GLFW_LIBRARY_DIRS})
+link_directories(/opt/homebrew/lib)
 
 # GLAD (수동 추가)
 add_library(glad STATIC glad/src/glad.c)
+target_include_directories(glad PUBLIC glad/include)
 
+
+include_directories(
+    ${PROJECT_SOURCE_DIR}/include
+)
 
 # src 디렉토리 안의 모든 .cpp 파일을 각각 실행파일로 빌드
 file(GLOB SOURCES "src/*.cpp")
@@ -47,18 +47,20 @@ foreach(source ${SOURCES})
     endif()
     
     set(EXEC_NAME "${FILENAME}_OpenGL")
+    message(STATUS "Building target: ${EXEC_NAME}")
 
-    add_executable(${EXEC_NAME} ${source} glad/src/glad.c)
+    add_executable(${EXEC_NAME} ${source})
 
     target_include_directories(${EXEC_NAME} PRIVATE
-        glad/include
         ${GLFW_INCLUDE_DIRS}
+        ${ASSIMP_INCLUDE_DIRS}
         /opt/homebrew/include
     )
 
     target_link_libraries(${EXEC_NAME}
         glad
         ${GLFW_LIBRARIES}
+        ${ASSIMP_LIBRARIES}
         "-framework OpenGL"
     )
 endforeach()
