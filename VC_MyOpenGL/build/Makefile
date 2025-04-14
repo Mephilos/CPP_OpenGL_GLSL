@@ -130,17 +130,17 @@ glad/fast:
 .PHONY : glad/fast
 
 #=============================================================================
-# Target rules for targets named LightingBasic_OpenGL
+# Target rules for targets named lightingMap_OpenGL
 
 # Build rule for target.
-LightingBasic_OpenGL: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LightingBasic_OpenGL
-.PHONY : LightingBasic_OpenGL
+lightingMap_OpenGL: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lightingMap_OpenGL
+.PHONY : lightingMap_OpenGL
 
 # fast build rule for target.
-LightingBasic_OpenGL/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightingBasic_OpenGL.dir/build.make CMakeFiles/LightingBasic_OpenGL.dir/build
-.PHONY : LightingBasic_OpenGL/fast
+lightingMap_OpenGL/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lightingMap_OpenGL.dir/build.make CMakeFiles/lightingMap_OpenGL.dir/build
+.PHONY : lightingMap_OpenGL/fast
 
 glad/src/glad.o: glad/src/glad.c.o
 .PHONY : glad/src/glad.o
@@ -148,7 +148,7 @@ glad/src/glad.o: glad/src/glad.c.o
 # target to build an object file
 glad/src/glad.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/glad/src/glad.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightingBasic_OpenGL.dir/build.make CMakeFiles/LightingBasic_OpenGL.dir/glad/src/glad.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lightingMap_OpenGL.dir/build.make CMakeFiles/lightingMap_OpenGL.dir/glad/src/glad.c.o
 .PHONY : glad/src/glad.c.o
 
 glad/src/glad.i: glad/src/glad.c.i
@@ -157,7 +157,7 @@ glad/src/glad.i: glad/src/glad.c.i
 # target to preprocess a source file
 glad/src/glad.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/glad/src/glad.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightingBasic_OpenGL.dir/build.make CMakeFiles/LightingBasic_OpenGL.dir/glad/src/glad.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lightingMap_OpenGL.dir/build.make CMakeFiles/lightingMap_OpenGL.dir/glad/src/glad.c.i
 .PHONY : glad/src/glad.c.i
 
 glad/src/glad.s: glad/src/glad.c.s
@@ -166,32 +166,32 @@ glad/src/glad.s: glad/src/glad.c.s
 # target to generate assembly for a file
 glad/src/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/glad/src/glad.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightingBasic_OpenGL.dir/build.make CMakeFiles/LightingBasic_OpenGL.dir/glad/src/glad.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lightingMap_OpenGL.dir/build.make CMakeFiles/lightingMap_OpenGL.dir/glad/src/glad.c.s
 .PHONY : glad/src/glad.c.s
 
-src/LightingBasic.o: src/LightingBasic.cpp.o
-.PHONY : src/LightingBasic.o
+src/lightingMap.o: src/lightingMap.cpp.o
+.PHONY : src/lightingMap.o
 
 # target to build an object file
-src/LightingBasic.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightingBasic_OpenGL.dir/build.make CMakeFiles/LightingBasic_OpenGL.dir/src/LightingBasic.cpp.o
-.PHONY : src/LightingBasic.cpp.o
+src/lightingMap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lightingMap_OpenGL.dir/build.make CMakeFiles/lightingMap_OpenGL.dir/src/lightingMap.cpp.o
+.PHONY : src/lightingMap.cpp.o
 
-src/LightingBasic.i: src/LightingBasic.cpp.i
-.PHONY : src/LightingBasic.i
+src/lightingMap.i: src/lightingMap.cpp.i
+.PHONY : src/lightingMap.i
 
 # target to preprocess a source file
-src/LightingBasic.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightingBasic_OpenGL.dir/build.make CMakeFiles/LightingBasic_OpenGL.dir/src/LightingBasic.cpp.i
-.PHONY : src/LightingBasic.cpp.i
+src/lightingMap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lightingMap_OpenGL.dir/build.make CMakeFiles/lightingMap_OpenGL.dir/src/lightingMap.cpp.i
+.PHONY : src/lightingMap.cpp.i
 
-src/LightingBasic.s: src/LightingBasic.cpp.s
-.PHONY : src/LightingBasic.s
+src/lightingMap.s: src/lightingMap.cpp.s
+.PHONY : src/lightingMap.s
 
 # target to generate assembly for a file
-src/LightingBasic.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LightingBasic_OpenGL.dir/build.make CMakeFiles/LightingBasic_OpenGL.dir/src/LightingBasic.cpp.s
-.PHONY : src/LightingBasic.cpp.s
+src/lightingMap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lightingMap_OpenGL.dir/build.make CMakeFiles/lightingMap_OpenGL.dir/src/lightingMap.cpp.s
+.PHONY : src/lightingMap.cpp.s
 
 # Help Target
 help:
@@ -201,14 +201,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... LightingBasic_OpenGL"
 	@echo "... glad"
+	@echo "... lightingMap_OpenGL"
 	@echo "... glad/src/glad.o"
 	@echo "... glad/src/glad.i"
 	@echo "... glad/src/glad.s"
-	@echo "... src/LightingBasic.o"
-	@echo "... src/LightingBasic.i"
-	@echo "... src/LightingBasic.s"
+	@echo "... src/lightingMap.o"
+	@echo "... src/lightingMap.i"
+	@echo "... src/lightingMap.s"
 .PHONY : help
 
 

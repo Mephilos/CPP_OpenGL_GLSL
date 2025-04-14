@@ -40,16 +40,16 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "LightingBasic_OpenGL::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-LightingBasic_OpenGL-Debug-2699b7686fa9b3a8716e.json",
-					"name" : "LightingBasic_OpenGL",
+					"id" : "glad::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-glad-Debug-ada56d4afcbad9108170.json",
+					"name" : "glad",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "glad::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-glad-Debug-ada56d4afcbad9108170.json",
-					"name" : "glad",
+					"id" : "lightingMap_OpenGL::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lightingMap_OpenGL-Debug-086b452f15fb1d5f79d7.json",
+					"name" : "lightingMap_OpenGL",
 					"projectIndex" : 0
 				}
 			]

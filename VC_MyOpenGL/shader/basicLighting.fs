@@ -25,7 +25,7 @@ void main()
     float specularStrength = 0.5;
     vec3 viewDir = normalize(viewPos - FragPos);
     vec3 reflectDir = reflect(-lightDir, norm);
-    float spec = pow(max(dot(viewDir, reflectDir), 0.0), 64); // pow 는 집중도 계산
+    float spec = pow(max(dot(viewDir, reflectDir), 0.0), 256); // pow 는 집중도 계산
     vec3 specular = specularStrength * spec * lightColor;
 
     vec3 result = (ambient + diffuse + specular) * objectColor;     // 물체에 조명 적용
