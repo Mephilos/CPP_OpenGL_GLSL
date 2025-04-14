@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "lightingMap_OpenGL"
+			"path" : "lightingFinal_OpenGL"
 		}
 	],
 	"backtrace" : 1,
@@ -139,7 +139,7 @@
 			"id" : "glad::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "lightingMap_OpenGL::@6890427a1f51a3e7e1df",
+	"id" : "lightingFinal_OpenGL::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -179,8 +179,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "lightingMap_OpenGL",
-	"nameOnDisk" : "lightingMap_OpenGL",
+	"name" : "lightingFinal_OpenGL",
+	"nameOnDisk" : "lightingFinal_OpenGL",
 	"paths" : 
 	{
 		"build" : ".",
@@ -202,7 +202,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/lightingMap.cpp",
+			"path" : "src/lightingFinal.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

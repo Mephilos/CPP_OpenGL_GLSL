@@ -1,4 +1,4 @@
-CMakeFiles/lightingMap_OpenGL.dir/glad/src/glad.c.o: \
+CMakeFiles/lightingFinal_OpenGL.dir/glad/src/glad.c.o: \
   /Users/taehosim/Dev/Study/VC_MyOpenGL/glad/src/glad.c \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/stdio.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/usr/include/_stdio.h \

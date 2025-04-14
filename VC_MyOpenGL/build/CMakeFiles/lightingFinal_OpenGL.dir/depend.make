@@ -1,2 +1,2 @@
-# Empty dependencies file for lightingMap_OpenGL.
+# Empty dependencies file for lightingFinal_OpenGL.
 # This may be replaced when dependencies are built.

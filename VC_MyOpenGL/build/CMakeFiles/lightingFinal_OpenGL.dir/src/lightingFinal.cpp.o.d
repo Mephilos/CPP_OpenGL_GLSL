@@ -1,5 +1,5 @@
-CMakeFiles/lightingMap_OpenGL.dir/src/lightingMap.cpp.o: \
-  /Users/taehosim/Dev/Study/VC_MyOpenGL/src/lightingMap.cpp \
+CMakeFiles/lightingFinal_OpenGL.dir/src/lightingFinal.cpp.o: \
+  /Users/taehosim/Dev/Study/VC_MyOpenGL/src/lightingFinal.cpp \
   /Users/taehosim/Dev/Study/VC_MyOpenGL/include/Shader.h \
   /Users/taehosim/Dev/Study/VC_MyOpenGL/glad/include/glad/glad.h \
   /Users/taehosim/Dev/Study/VC_MyOpenGL/glad/include/KHR/khrplatform.h \

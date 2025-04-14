@@ -7,14 +7,14 @@
 },
 {
   "directory": "/Users/taehosim/Dev/Study/VC_MyOpenGL/build",
-  "command": "/usr/bin/clang++  -I/opt/homebrew/Cellar/glfw/3.4/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL/glad/include -I/opt/homebrew/include -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -o CMakeFiles/lightingMap_OpenGL.dir/src/lightingMap.cpp.o -c /Users/taehosim/Dev/Study/VC_MyOpenGL/src/lightingMap.cpp",
-  "file": "/Users/taehosim/Dev/Study/VC_MyOpenGL/src/lightingMap.cpp",
-  "output": "CMakeFiles/lightingMap_OpenGL.dir/src/lightingMap.cpp.o"
+  "command": "/usr/bin/clang++  -I/opt/homebrew/Cellar/glfw/3.4/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL/glad/include -I/opt/homebrew/include -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -o CMakeFiles/lightingFinal_OpenGL.dir/src/lightingFinal.cpp.o -c /Users/taehosim/Dev/Study/VC_MyOpenGL/src/lightingFinal.cpp",
+  "file": "/Users/taehosim/Dev/Study/VC_MyOpenGL/src/lightingFinal.cpp",
+  "output": "CMakeFiles/lightingFinal_OpenGL.dir/src/lightingFinal.cpp.o"
 },
 {
   "directory": "/Users/taehosim/Dev/Study/VC_MyOpenGL/build",
-  "command": "/usr/bin/clang  -I/opt/homebrew/Cellar/glfw/3.4/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL/glad/include -I/opt/homebrew/include -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -o CMakeFiles/lightingMap_OpenGL.dir/glad/src/glad.c.o -c /Users/taehosim/Dev/Study/VC_MyOpenGL/glad/src/glad.c",
+  "command": "/usr/bin/clang  -I/opt/homebrew/Cellar/glfw/3.4/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL/glad/include -I/opt/homebrew/include -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -o CMakeFiles/lightingFinal_OpenGL.dir/glad/src/glad.c.o -c /Users/taehosim/Dev/Study/VC_MyOpenGL/glad/src/glad.c",
   "file": "/Users/taehosim/Dev/Study/VC_MyOpenGL/glad/src/glad.c",
-  "output": "CMakeFiles/lightingMap_OpenGL.dir/glad/src/glad.c.o"
+  "output": "CMakeFiles/lightingFinal_OpenGL.dir/glad/src/glad.c.o"
 }
 ]
