@@ -27,18 +27,21 @@ public:
     // 주어진 경로에서 정점 셰이더와 프래그먼트 셰이더의 소스 코드를 읽어와야 합니다.
     // 그런 다음, 이를 컴파일하고 링크하여 최종적으로 사용할 수 있는 셰이더 프로그램을 생성합니다.
     // 이 과정은 OpenGL에서 그래픽스를 렌더링하는 데 필요한 필수 단계입니다.
-    Shader(const char* vertexPath, const char* fragmentPath)
+    Shader(const char* vertexPath, const char* fragmentPath, const char* geometryPath = nullptr)
     {
         // 1. 파일 경로에서 정점 및 프래그먼트 소스 코드를 가져옵니다.
         std::string vertexCode;
         std::string fragmentCode;
+        std::string geometryCode;
         std::ifstream vShaderFile;
         std::ifstream fShaderFile;
+        std::ifstream gShaderFile;
 
         // ifstream 객체가 예외를 발생시킬 수 있도록 설정합니다.
         // 이렇게 하면 파일을 여는 도중 문제가 발생할 경우 예외를 발생시켜 적절한 오류 처리를 할 수 있습니다.
         vShaderFile.exceptions(std::ifstream::failbit | std::ifstream::badbit);
         fShaderFile.exceptions(std::ifstream::failbit | std::ifstream::badbit);
+        gShaderFile.exceptions(std::ifstream::failbit | std::ifstream::badbit);
 
         try
         {
@@ -59,6 +62,18 @@ public:
             // 스트림을 문자열로 변환합니다. 이제 셰이더 소스 코드가 문자열 형태로 준비되었습니다.
             vertexCode = vShaderStream.str();
             fragmentCode = fShaderStream.str();
+
+            //지오매트리 패스가 채워져 있을 때 실행하는 지오매트리 파일 읽음.
+            if(geometryPath != nullptr)
+            {
+                gShaderFile.open(geometryPath);
+                std::stringstream gShaderStream;
+                //스트림에 저장
+                gShaderStream << gShaderFile.rdbuf();
+                gShaderFile.close();
+                //코드에 변환하여 저장
+                geometryCode = gShaderStream.str();
+            }
         }
         catch (std::ifstream::failure& e)
         {
@@ -72,6 +87,10 @@ public:
             std::cerr << " 현재 경로: " << std::filesystem::current_path() << std::endl;
         }
         if (!fragmentCode.length()) {
+            std::cerr << " Failed to load fragment shader: " << fragmentPath << std::endl;
+            std::cerr << " 현재 경로: " << std::filesystem::current_path() << std::endl;
+        }
+        if (!geometryCode.length()) {
             std::cerr << " Failed to load fragment shader: " << fragmentPath << std::endl;
             std::cerr << " 현재 경로: " << std::filesystem::current_path() << std::endl;
         }
@@ -92,13 +111,24 @@ public:
         glShaderSource(fragment, 1, &fShaderCode, NULL); // 셰이더 소스 코드를 설정합니다.
         glCompileShader(fragment); // 셰이더를 컴파일합니다.
         checkCompileErrors(fragment, "FRAGMENT"); // 컴파일 오류를 확인합니다.
-
+        //지오메트리 컴파일 (기하(도형) 컴파일)
+        unsigned int geometry;
+        if(geometryPath != nullptr)
+        {
+            const char * gShaderCode = geometryCode.c_str();
+            geometry = glCreateShader(GL_GEOMETRY_SHADER);
+            glShaderSource(geometry, 1, &gShaderCode, NULL);
+            glCompileShader(geometry);
+            checkCompileErrors(geometry, "GEOMETRY");
+        }
         // 셰이더 프로그램을 생성합니다.
         // 컴파일된 셰이더를 프로그램에 첨부하고 링크하여 최종적으로 사용할 수 있는 셰이더 프로그램을 만듭니다.
         // 이 과정은 OpenGL이 셰이더를 실행하기 위해 필요한 모든 정보를 결합하는 단계입니다.
         ID = glCreateProgram(); // 셰이더 프로그램 객체를 생성합니다.
         glAttachShader(ID, vertex); // 정점 셰이더를 프로그램에 첨부합니다.
         glAttachShader(ID, fragment); // 프래그먼트 셰이더를 프로그램에 첨부합니다.
+        if(geometryPath != nullptr) // 지오메트리 경로가 있을ㄷ 때 기하 세이더를 프로그램에 첨부.
+            glAttachShader(ID, geometry);
         glLinkProgram(ID); // 프로그램을 링크하여 최종적으로 사용할 수 있는 셰이더 프로그램을 완성합니다.
         checkCompileErrors(ID, "PROGRAM"); // 링크 오류를 확인합니다.
 
