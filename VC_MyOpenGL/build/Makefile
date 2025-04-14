@@ -130,17 +130,17 @@ glad/fast:
 .PHONY : glad/fast
 
 #=============================================================================
-# Target rules for targets named lightingFinal_OpenGL
+# Target rules for targets named Mesh_OpenGL
 
 # Build rule for target.
-lightingFinal_OpenGL: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lightingFinal_OpenGL
-.PHONY : lightingFinal_OpenGL
+Mesh_OpenGL: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Mesh_OpenGL
+.PHONY : Mesh_OpenGL
 
 # fast build rule for target.
-lightingFinal_OpenGL/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lightingFinal_OpenGL.dir/build.make CMakeFiles/lightingFinal_OpenGL.dir/build
-.PHONY : lightingFinal_OpenGL/fast
+Mesh_OpenGL/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mesh_OpenGL.dir/build.make CMakeFiles/Mesh_OpenGL.dir/build
+.PHONY : Mesh_OpenGL/fast
 
 glad/src/glad.o: glad/src/glad.c.o
 .PHONY : glad/src/glad.o
@@ -166,29 +166,29 @@ glad/src/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/glad/src/glad.c.s
 .PHONY : glad/src/glad.c.s
 
-src/lightingFinal.o: src/lightingFinal.cpp.o
-.PHONY : src/lightingFinal.o
+src/Mesh.o: src/Mesh.cpp.o
+.PHONY : src/Mesh.o
 
 # target to build an object file
-src/lightingFinal.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lightingFinal_OpenGL.dir/build.make CMakeFiles/lightingFinal_OpenGL.dir/src/lightingFinal.cpp.o
-.PHONY : src/lightingFinal.cpp.o
+src/Mesh.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mesh_OpenGL.dir/build.make CMakeFiles/Mesh_OpenGL.dir/src/Mesh.cpp.o
+.PHONY : src/Mesh.cpp.o
 
-src/lightingFinal.i: src/lightingFinal.cpp.i
-.PHONY : src/lightingFinal.i
+src/Mesh.i: src/Mesh.cpp.i
+.PHONY : src/Mesh.i
 
 # target to preprocess a source file
-src/lightingFinal.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lightingFinal_OpenGL.dir/build.make CMakeFiles/lightingFinal_OpenGL.dir/src/lightingFinal.cpp.i
-.PHONY : src/lightingFinal.cpp.i
+src/Mesh.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mesh_OpenGL.dir/build.make CMakeFiles/Mesh_OpenGL.dir/src/Mesh.cpp.i
+.PHONY : src/Mesh.cpp.i
 
-src/lightingFinal.s: src/lightingFinal.cpp.s
-.PHONY : src/lightingFinal.s
+src/Mesh.s: src/Mesh.cpp.s
+.PHONY : src/Mesh.s
 
 # target to generate assembly for a file
-src/lightingFinal.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lightingFinal_OpenGL.dir/build.make CMakeFiles/lightingFinal_OpenGL.dir/src/lightingFinal.cpp.s
-.PHONY : src/lightingFinal.cpp.s
+src/Mesh.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mesh_OpenGL.dir/build.make CMakeFiles/Mesh_OpenGL.dir/src/Mesh.cpp.s
+.PHONY : src/Mesh.cpp.s
 
 # Help Target
 help:
@@ -198,14 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Mesh_OpenGL"
 	@echo "... glad"
-	@echo "... lightingFinal_OpenGL"
 	@echo "... glad/src/glad.o"
 	@echo "... glad/src/glad.i"
 	@echo "... glad/src/glad.s"
-	@echo "... src/lightingFinal.o"
-	@echo "... src/lightingFinal.i"
-	@echo "... src/lightingFinal.s"
+	@echo "... src/Mesh.o"
+	@echo "... src/Mesh.i"
+	@echo "... src/Mesh.s"
 .PHONY : help
 
 

@@ -64,12 +64,12 @@ CMAKE_BINARY_DIR = /Users/taehosim/Dev/Study/VC_MyOpenGL/build
 
 # The main recursive "all" target.
 all: CMakeFiles/glad.dir/all
-all: CMakeFiles/lightingFinal_OpenGL.dir/all
+all: CMakeFiles/Mesh_OpenGL.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/glad.dir/codegen
-codegen: CMakeFiles/lightingFinal_OpenGL.dir/codegen
+codegen: CMakeFiles/Mesh_OpenGL.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -78,7 +78,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/glad.dir/clean
-clean: CMakeFiles/lightingFinal_OpenGL.dir/clean
+clean: CMakeFiles/Mesh_OpenGL.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -88,7 +88,7 @@ clean: CMakeFiles/lightingFinal_OpenGL.dir/clean
 CMakeFiles/glad.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles --progress-num=1,2 "Built target glad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles --progress-num=3,4 "Built target glad"
 .PHONY : CMakeFiles/glad.dir/all
 
 # Build rule for subdir invocation for target.
@@ -105,7 +105,7 @@ glad: CMakeFiles/glad.dir/rule
 # codegen rule for target.
 CMakeFiles/glad.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles --progress-num=1,2 "Finished codegen for target glad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles --progress-num=3,4 "Finished codegen for target glad"
 .PHONY : CMakeFiles/glad.dir/codegen
 
 # clean rule for target.
@@ -114,36 +114,36 @@ CMakeFiles/glad.dir/clean:
 .PHONY : CMakeFiles/glad.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/lightingFinal_OpenGL.dir
+# Target rules for target CMakeFiles/Mesh_OpenGL.dir
 
 # All Build rule for target.
-CMakeFiles/lightingFinal_OpenGL.dir/all: CMakeFiles/glad.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lightingFinal_OpenGL.dir/build.make CMakeFiles/lightingFinal_OpenGL.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lightingFinal_OpenGL.dir/build.make CMakeFiles/lightingFinal_OpenGL.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles --progress-num=3,4 "Built target lightingFinal_OpenGL"
-.PHONY : CMakeFiles/lightingFinal_OpenGL.dir/all
+CMakeFiles/Mesh_OpenGL.dir/all: CMakeFiles/glad.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mesh_OpenGL.dir/build.make CMakeFiles/Mesh_OpenGL.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mesh_OpenGL.dir/build.make CMakeFiles/Mesh_OpenGL.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles --progress-num=1,2 "Built target Mesh_OpenGL"
+.PHONY : CMakeFiles/Mesh_OpenGL.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/lightingFinal_OpenGL.dir/rule: cmake_check_build_system
+CMakeFiles/Mesh_OpenGL.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lightingFinal_OpenGL.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Mesh_OpenGL.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles 0
-.PHONY : CMakeFiles/lightingFinal_OpenGL.dir/rule
+.PHONY : CMakeFiles/Mesh_OpenGL.dir/rule
 
 # Convenience name for target.
-lightingFinal_OpenGL: CMakeFiles/lightingFinal_OpenGL.dir/rule
-.PHONY : lightingFinal_OpenGL
+Mesh_OpenGL: CMakeFiles/Mesh_OpenGL.dir/rule
+.PHONY : Mesh_OpenGL
 
 # codegen rule for target.
-CMakeFiles/lightingFinal_OpenGL.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lightingFinal_OpenGL.dir/build.make CMakeFiles/lightingFinal_OpenGL.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles --progress-num=3,4 "Finished codegen for target lightingFinal_OpenGL"
-.PHONY : CMakeFiles/lightingFinal_OpenGL.dir/codegen
+CMakeFiles/Mesh_OpenGL.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mesh_OpenGL.dir/build.make CMakeFiles/Mesh_OpenGL.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles --progress-num=1,2 "Finished codegen for target Mesh_OpenGL"
+.PHONY : CMakeFiles/Mesh_OpenGL.dir/codegen
 
 # clean rule for target.
-CMakeFiles/lightingFinal_OpenGL.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lightingFinal_OpenGL.dir/build.make CMakeFiles/lightingFinal_OpenGL.dir/clean
-.PHONY : CMakeFiles/lightingFinal_OpenGL.dir/clean
+CMakeFiles/Mesh_OpenGL.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mesh_OpenGL.dir/build.make CMakeFiles/Mesh_OpenGL.dir/clean
+.PHONY : CMakeFiles/Mesh_OpenGL.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

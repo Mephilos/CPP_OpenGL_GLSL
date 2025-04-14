@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/Mesh_OpenGL.dir/src/Mesh.cpp.o -o Mesh_OpenGL   -L/opt/homebrew/lib  -Wl,-rpath,/opt/homebrew/lib libglad.a -lglfw -lassimp -framework OpenGL

@@ -40,16 +40,16 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "glad::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-glad-Debug-4cc7d08e8d5bd7a07cd6.json",
-					"name" : "glad",
+					"id" : "Mesh_OpenGL::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Mesh_OpenGL-Debug-460dca499dc1883a721d.json",
+					"name" : "Mesh_OpenGL",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "lightingFinal_OpenGL::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-lightingFinal_OpenGL-Debug-c0a4e6f0b9b27331bfdb.json",
-					"name" : "lightingFinal_OpenGL",
+					"id" : "glad::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-glad-Debug-4cc7d08e8d5bd7a07cd6.json",
+					"name" : "glad",
 					"projectIndex" : 0
 				}
 			]
