@@ -74,12 +74,16 @@ public:
                 //코드에 변환하여 저장
                 geometryCode = gShaderStream.str();
             }
+            
         }
         catch (std::ifstream::failure& e)
         {
             // 파일을 성공적으로 읽지 못했을 때의 오류 메시지를 출력합니다.
             // 이 오류는 파일이 존재하지 않거나 읽기 권한이 없을 때 발생할 수 있습니다.
             std::cout << "ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ" << std::endl;
+            std::cerr << "예외 내용: " << e.what() << std::endl;
+            std::cerr << "프래그먼트 경로: " << fragmentPath << std::endl;
+            std::cerr << "현재 경로: " << std::filesystem::current_path() << std::endl;
         }
 
         if (!vertexCode.length()) {
@@ -90,8 +94,8 @@ public:
             std::cerr << " Failed to load fragment shader: " << fragmentPath << std::endl;
             std::cerr << " 현재 경로: " << std::filesystem::current_path() << std::endl;
         }
-        if (!geometryCode.length()) {
-            std::cerr << " Failed to load fragment shader: " << fragmentPath << std::endl;
+        if (geometryPath != nullptr && !geometryCode.length()) {
+            std::cerr << " Failed to load geometry shader: " << geometryPath << std::endl;
             std::cerr << " 현재 경로: " << std::filesystem::current_path() << std::endl;
         }
 

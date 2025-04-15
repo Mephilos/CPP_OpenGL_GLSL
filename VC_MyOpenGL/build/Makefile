@@ -130,17 +130,17 @@ glad/fast:
 .PHONY : glad/fast
 
 #=============================================================================
-# Target rules for targets named Mesh_OpenGL
+# Target rules for targets named _OpenGL
 
 # Build rule for target.
-Mesh_OpenGL: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Mesh_OpenGL
-.PHONY : Mesh_OpenGL
+_OpenGL: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _OpenGL
+.PHONY : _OpenGL
 
 # fast build rule for target.
-Mesh_OpenGL/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mesh_OpenGL.dir/build.make CMakeFiles/Mesh_OpenGL.dir/build
-.PHONY : Mesh_OpenGL/fast
+_OpenGL/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_OpenGL.dir/build.make CMakeFiles/_OpenGL.dir/build
+.PHONY : _OpenGL/fast
 
 glad/src/glad.o: glad/src/glad.c.o
 .PHONY : glad/src/glad.o
@@ -171,7 +171,7 @@ src/Mesh.o: src/Mesh.cpp.o
 
 # target to build an object file
 src/Mesh.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mesh_OpenGL.dir/build.make CMakeFiles/Mesh_OpenGL.dir/src/Mesh.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_OpenGL.dir/build.make CMakeFiles/_OpenGL.dir/src/Mesh.cpp.o
 .PHONY : src/Mesh.cpp.o
 
 src/Mesh.i: src/Mesh.cpp.i
@@ -179,7 +179,7 @@ src/Mesh.i: src/Mesh.cpp.i
 
 # target to preprocess a source file
 src/Mesh.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mesh_OpenGL.dir/build.make CMakeFiles/Mesh_OpenGL.dir/src/Mesh.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_OpenGL.dir/build.make CMakeFiles/_OpenGL.dir/src/Mesh.cpp.i
 .PHONY : src/Mesh.cpp.i
 
 src/Mesh.s: src/Mesh.cpp.s
@@ -187,8 +187,32 @@ src/Mesh.s: src/Mesh.cpp.s
 
 # target to generate assembly for a file
 src/Mesh.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mesh_OpenGL.dir/build.make CMakeFiles/Mesh_OpenGL.dir/src/Mesh.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_OpenGL.dir/build.make CMakeFiles/_OpenGL.dir/src/Mesh.cpp.s
 .PHONY : src/Mesh.cpp.s
+
+src/stb_image.o: src/stb_image.cpp.o
+.PHONY : src/stb_image.o
+
+# target to build an object file
+src/stb_image.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_OpenGL.dir/build.make CMakeFiles/_OpenGL.dir/src/stb_image.cpp.o
+.PHONY : src/stb_image.cpp.o
+
+src/stb_image.i: src/stb_image.cpp.i
+.PHONY : src/stb_image.i
+
+# target to preprocess a source file
+src/stb_image.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_OpenGL.dir/build.make CMakeFiles/_OpenGL.dir/src/stb_image.cpp.i
+.PHONY : src/stb_image.cpp.i
+
+src/stb_image.s: src/stb_image.cpp.s
+.PHONY : src/stb_image.s
+
+# target to generate assembly for a file
+src/stb_image.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_OpenGL.dir/build.make CMakeFiles/_OpenGL.dir/src/stb_image.cpp.s
+.PHONY : src/stb_image.cpp.s
 
 # Help Target
 help:
@@ -198,7 +222,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Mesh_OpenGL"
+	@echo "... _OpenGL"
 	@echo "... glad"
 	@echo "... glad/src/glad.o"
 	@echo "... glad/src/glad.i"
@@ -206,6 +230,9 @@ help:
 	@echo "... src/Mesh.o"
 	@echo "... src/Mesh.i"
 	@echo "... src/Mesh.s"
+	@echo "... src/stb_image.o"
+	@echo "... src/stb_image.i"
+	@echo "... src/stb_image.s"
 .PHONY : help
 
 
