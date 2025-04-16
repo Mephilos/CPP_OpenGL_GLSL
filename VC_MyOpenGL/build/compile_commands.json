@@ -7,14 +7,20 @@
 },
 {
   "directory": "/Users/taehosim/Dev/Study/VC_MyOpenGL/build",
-  "command": "/usr/bin/clang++  -I/Users/taehosim/Dev/Study/VC_MyOpenGL/include -I/opt/homebrew/Cellar/glfw/3.4/include -I/opt/homebrew/Cellar/assimp/5.4.3/include -I/opt/homebrew/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL/glad/include -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -o CMakeFiles/_OpenGL.dir/src/Mesh.cpp.o -c /Users/taehosim/Dev/Study/VC_MyOpenGL/src/Mesh.cpp",
-  "file": "/Users/taehosim/Dev/Study/VC_MyOpenGL/src/Mesh.cpp",
-  "output": "CMakeFiles/_OpenGL.dir/src/Mesh.cpp.o"
+  "command": "/usr/bin/clang++  -I/Users/taehosim/Dev/Study/VC_MyOpenGL/include -I/opt/homebrew/Cellar/glfw/3.4/include -I/opt/homebrew/Cellar/assimp/5.4.3/include -I/opt/homebrew/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL/glad/include -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -o CMakeFiles/_OpenGL.dir/main.cpp.o -c /Users/taehosim/Dev/Study/VC_MyOpenGL/main.cpp",
+  "file": "/Users/taehosim/Dev/Study/VC_MyOpenGL/main.cpp",
+  "output": "CMakeFiles/_OpenGL.dir/main.cpp.o"
 },
 {
   "directory": "/Users/taehosim/Dev/Study/VC_MyOpenGL/build",
-  "command": "/usr/bin/clang++  -I/Users/taehosim/Dev/Study/VC_MyOpenGL/include -I/opt/homebrew/Cellar/glfw/3.4/include -I/opt/homebrew/Cellar/assimp/5.4.3/include -I/opt/homebrew/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL/glad/include -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -o CMakeFiles/_OpenGL.dir/src/stb_image.cpp.o -c /Users/taehosim/Dev/Study/VC_MyOpenGL/src/stb_image.cpp",
-  "file": "/Users/taehosim/Dev/Study/VC_MyOpenGL/src/stb_image.cpp",
-  "output": "CMakeFiles/_OpenGL.dir/src/stb_image.cpp.o"
+  "command": "/usr/bin/clang++  -I/Users/taehosim/Dev/Study/VC_MyOpenGL/include -I/opt/homebrew/Cellar/glfw/3.4/include -I/opt/homebrew/Cellar/assimp/5.4.3/include -I/opt/homebrew/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL/glad/include -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -o CMakeFiles/_OpenGL.dir/src/TextureLoader.cpp.o -c /Users/taehosim/Dev/Study/VC_MyOpenGL/src/TextureLoader.cpp",
+  "file": "/Users/taehosim/Dev/Study/VC_MyOpenGL/src/TextureLoader.cpp",
+  "output": "CMakeFiles/_OpenGL.dir/src/TextureLoader.cpp.o"
+},
+{
+  "directory": "/Users/taehosim/Dev/Study/VC_MyOpenGL/build",
+  "command": "/usr/bin/clang++  -I/Users/taehosim/Dev/Study/VC_MyOpenGL/include -I/opt/homebrew/Cellar/glfw/3.4/include -I/opt/homebrew/Cellar/assimp/5.4.3/include -I/opt/homebrew/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL/glad/include -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -o CMakeFiles/_OpenGL.dir/src/Skybox.cpp.o -c /Users/taehosim/Dev/Study/VC_MyOpenGL/src/Skybox.cpp",
+  "file": "/Users/taehosim/Dev/Study/VC_MyOpenGL/src/Skybox.cpp",
+  "output": "CMakeFiles/_OpenGL.dir/src/Skybox.cpp.o"
 }
 ]

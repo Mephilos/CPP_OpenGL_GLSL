@@ -19,13 +19,16 @@ target_include_directories(glad PUBLIC glad/include)
 include_directories(
     ${PROJECT_SOURCE_DIR}/include
 )
+
 file(COPY ${CMAKE_SOURCE_DIR}/shader DESTINATION ${CMAKE_BINARY_DIR})
 file(COPY ${CMAKE_SOURCE_DIR}/resources DESTINATION ${CMAKE_BINARY_DIR})
+
 set(EXEC_NAME _OpenGL)
 
 add_executable(${EXEC_NAME}
-    src/Mesh.cpp
-    src/stb_image.cpp
+    main.cpp
+    src/TextureLoader.cpp
+    src/Skybox.cpp
 )
 target_include_directories(${EXEC_NAME} PRIVATE
     ${GLFW_INCLUDE_DIRS}

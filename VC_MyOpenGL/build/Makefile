@@ -166,53 +166,77 @@ glad/src/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/glad/src/glad.c.s
 .PHONY : glad/src/glad.c.s
 
-src/Mesh.o: src/Mesh.cpp.o
-.PHONY : src/Mesh.o
+main.o: main.cpp.o
+.PHONY : main.o
 
 # target to build an object file
-src/Mesh.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_OpenGL.dir/build.make CMakeFiles/_OpenGL.dir/src/Mesh.cpp.o
-.PHONY : src/Mesh.cpp.o
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_OpenGL.dir/build.make CMakeFiles/_OpenGL.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-src/Mesh.i: src/Mesh.cpp.i
-.PHONY : src/Mesh.i
+main.i: main.cpp.i
+.PHONY : main.i
 
 # target to preprocess a source file
-src/Mesh.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_OpenGL.dir/build.make CMakeFiles/_OpenGL.dir/src/Mesh.cpp.i
-.PHONY : src/Mesh.cpp.i
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_OpenGL.dir/build.make CMakeFiles/_OpenGL.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-src/Mesh.s: src/Mesh.cpp.s
-.PHONY : src/Mesh.s
+main.s: main.cpp.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-src/Mesh.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_OpenGL.dir/build.make CMakeFiles/_OpenGL.dir/src/Mesh.cpp.s
-.PHONY : src/Mesh.cpp.s
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_OpenGL.dir/build.make CMakeFiles/_OpenGL.dir/main.cpp.s
+.PHONY : main.cpp.s
 
-src/stb_image.o: src/stb_image.cpp.o
-.PHONY : src/stb_image.o
+src/Skybox.o: src/Skybox.cpp.o
+.PHONY : src/Skybox.o
 
 # target to build an object file
-src/stb_image.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_OpenGL.dir/build.make CMakeFiles/_OpenGL.dir/src/stb_image.cpp.o
-.PHONY : src/stb_image.cpp.o
+src/Skybox.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_OpenGL.dir/build.make CMakeFiles/_OpenGL.dir/src/Skybox.cpp.o
+.PHONY : src/Skybox.cpp.o
 
-src/stb_image.i: src/stb_image.cpp.i
-.PHONY : src/stb_image.i
+src/Skybox.i: src/Skybox.cpp.i
+.PHONY : src/Skybox.i
 
 # target to preprocess a source file
-src/stb_image.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_OpenGL.dir/build.make CMakeFiles/_OpenGL.dir/src/stb_image.cpp.i
-.PHONY : src/stb_image.cpp.i
+src/Skybox.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_OpenGL.dir/build.make CMakeFiles/_OpenGL.dir/src/Skybox.cpp.i
+.PHONY : src/Skybox.cpp.i
 
-src/stb_image.s: src/stb_image.cpp.s
-.PHONY : src/stb_image.s
+src/Skybox.s: src/Skybox.cpp.s
+.PHONY : src/Skybox.s
 
 # target to generate assembly for a file
-src/stb_image.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_OpenGL.dir/build.make CMakeFiles/_OpenGL.dir/src/stb_image.cpp.s
-.PHONY : src/stb_image.cpp.s
+src/Skybox.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_OpenGL.dir/build.make CMakeFiles/_OpenGL.dir/src/Skybox.cpp.s
+.PHONY : src/Skybox.cpp.s
+
+src/TextureLoader.o: src/TextureLoader.cpp.o
+.PHONY : src/TextureLoader.o
+
+# target to build an object file
+src/TextureLoader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_OpenGL.dir/build.make CMakeFiles/_OpenGL.dir/src/TextureLoader.cpp.o
+.PHONY : src/TextureLoader.cpp.o
+
+src/TextureLoader.i: src/TextureLoader.cpp.i
+.PHONY : src/TextureLoader.i
+
+# target to preprocess a source file
+src/TextureLoader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_OpenGL.dir/build.make CMakeFiles/_OpenGL.dir/src/TextureLoader.cpp.i
+.PHONY : src/TextureLoader.cpp.i
+
+src/TextureLoader.s: src/TextureLoader.cpp.s
+.PHONY : src/TextureLoader.s
+
+# target to generate assembly for a file
+src/TextureLoader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_OpenGL.dir/build.make CMakeFiles/_OpenGL.dir/src/TextureLoader.cpp.s
+.PHONY : src/TextureLoader.cpp.s
 
 # Help Target
 help:
@@ -227,12 +251,15 @@ help:
 	@echo "... glad/src/glad.o"
 	@echo "... glad/src/glad.i"
 	@echo "... glad/src/glad.s"
-	@echo "... src/Mesh.o"
-	@echo "... src/Mesh.i"
-	@echo "... src/Mesh.s"
-	@echo "... src/stb_image.o"
-	@echo "... src/stb_image.i"
-	@echo "... src/stb_image.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... src/Skybox.o"
+	@echo "... src/Skybox.i"
+	@echo "... src/Skybox.s"
+	@echo "... src/TextureLoader.o"
+	@echo "... src/TextureLoader.i"
+	@echo "... src/TextureLoader.s"
 .PHONY : help
 
 

@@ -1,8 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/_OpenGL.dir/src/Mesh.cpp.o"
-  "CMakeFiles/_OpenGL.dir/src/Mesh.cpp.o.d"
-  "CMakeFiles/_OpenGL.dir/src/stb_image.cpp.o"
-  "CMakeFiles/_OpenGL.dir/src/stb_image.cpp.o.d"
+  "CMakeFiles/_OpenGL.dir/main.cpp.o"
+  "CMakeFiles/_OpenGL.dir/main.cpp.o.d"
+  "CMakeFiles/_OpenGL.dir/src/Skybox.cpp.o"
+  "CMakeFiles/_OpenGL.dir/src/Skybox.cpp.o.d"
+  "CMakeFiles/_OpenGL.dir/src/TextureLoader.cpp.o"
+  "CMakeFiles/_OpenGL.dir/src/TextureLoader.cpp.o.d"
   "_OpenGL"
   "_OpenGL.pdb"
 )
