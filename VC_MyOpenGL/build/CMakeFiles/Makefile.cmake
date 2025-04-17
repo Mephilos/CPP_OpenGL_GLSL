@@ -82,4 +82,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/_OpenGL.dir/DependInfo.cmake"
   "CMakeFiles/dep-spdlog.dir/DependInfo.cmake"
   "CMakeFiles/glad.dir/DependInfo.cmake"
+  "CMakeFiles/imgui.dir/DependInfo.cmake"
   )

@@ -34,25 +34,25 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 39,
+				"line" : 59,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 46,
+				"line" : 66,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 58,
+				"line" : 81,
 				"parent" : 0
 			},
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 29,
+				"line" : 48,
 				"parent" : 0
 			}
 		]
@@ -66,15 +66,26 @@
 					"fragment" : "-g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk"
 				}
 			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "IMGUI_IMPL_OPENGL_LOADER_GLAD"
+				}
+			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 5,
-					"path" : "/Users/taehosim/Dev/Study/VC_MyOpenGL/build/install/include"
+					"path" : "/Users/taehosim/Dev/Study/VC_MyOpenGL/include"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "/Users/taehosim/Dev/Study/VC_MyOpenGL/include"
+					"path" : "/Users/taehosim/Dev/Study/VC_MyOpenGL/imgui"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/taehosim/Dev/Study/VC_MyOpenGL/build/install/include"
 				},
 				{
 					"backtrace" : 5,
@@ -119,6 +130,10 @@
 		{
 			"backtrace" : 3,
 			"id" : "glad::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "imgui::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "_OpenGL::@6890427a1f51a3e7e1df",
@@ -150,7 +165,7 @@
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "-lspdlog",
+				"fragment" : "libimgui.a",
 				"role" : "libraries"
 			},
 			{
@@ -166,6 +181,11 @@
 			{
 				"backtrace" : 3,
 				"fragment" : "-lassimp",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lspdlog",
 				"role" : "libraries"
 			},
 			{

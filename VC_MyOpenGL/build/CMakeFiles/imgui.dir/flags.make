@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/clang++
 CXX_DEFINES = -DIMGUI_IMPL_OPENGL_LOADER_GLAD
 
-CXX_INCLUDES = -I/Users/taehosim/Dev/Study/VC_MyOpenGL/build/install/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL/glad/include -I/opt/homebrew/include
+CXX_INCLUDES = -I/Users/taehosim/Dev/Study/VC_MyOpenGL/imgui -I/Users/taehosim/Dev/Study/VC_MyOpenGL/glad/include -I/opt/homebrew/Cellar/glfw/3.4/include
 
 CXX_FLAGSarm64 = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk
 

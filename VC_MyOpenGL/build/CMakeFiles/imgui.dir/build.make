@@ -72,10 +72,24 @@ include CMakeFiles/imgui.dir/flags.make
 CMakeFiles/imgui.dir/codegen:
 .PHONY : CMakeFiles/imgui.dir/codegen
 
+CMakeFiles/imgui.dir/imgui/imgui.cpp.o: CMakeFiles/imgui.dir/flags.make
+CMakeFiles/imgui.dir/imgui/imgui.cpp.o: /Users/taehosim/Dev/Study/VC_MyOpenGL/imgui/imgui.cpp
+CMakeFiles/imgui.dir/imgui/imgui.cpp.o: CMakeFiles/imgui.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/imgui.dir/imgui/imgui.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui.dir/imgui/imgui.cpp.o -MF CMakeFiles/imgui.dir/imgui/imgui.cpp.o.d -o CMakeFiles/imgui.dir/imgui/imgui.cpp.o -c /Users/taehosim/Dev/Study/VC_MyOpenGL/imgui/imgui.cpp
+
+CMakeFiles/imgui.dir/imgui/imgui.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/imgui.dir/imgui/imgui.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/taehosim/Dev/Study/VC_MyOpenGL/imgui/imgui.cpp > CMakeFiles/imgui.dir/imgui/imgui.cpp.i
+
+CMakeFiles/imgui.dir/imgui/imgui.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/imgui/imgui.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/taehosim/Dev/Study/VC_MyOpenGL/imgui/imgui.cpp -o CMakeFiles/imgui.dir/imgui/imgui.cpp.s
+
 CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o: CMakeFiles/imgui.dir/flags.make
 CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o: /Users/taehosim/Dev/Study/VC_MyOpenGL/imgui/imgui_draw.cpp
 CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o: CMakeFiles/imgui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o -MF CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o.d -o CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o -c /Users/taehosim/Dev/Study/VC_MyOpenGL/imgui/imgui_draw.cpp
 
 CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.i: cmake_force
@@ -89,7 +103,7 @@ CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.s: cmake_force
 CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o: CMakeFiles/imgui.dir/flags.make
 CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o: /Users/taehosim/Dev/Study/VC_MyOpenGL/imgui/imgui_tables.cpp
 CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o: CMakeFiles/imgui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o -MF CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o.d -o CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o -c /Users/taehosim/Dev/Study/VC_MyOpenGL/imgui/imgui_tables.cpp
 
 CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.i: cmake_force
@@ -103,7 +117,7 @@ CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.s: cmake_force
 CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o: CMakeFiles/imgui.dir/flags.make
 CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o: /Users/taehosim/Dev/Study/VC_MyOpenGL/imgui/imgui_widgets.cpp
 CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o: CMakeFiles/imgui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o -MF CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o -c /Users/taehosim/Dev/Study/VC_MyOpenGL/imgui/imgui_widgets.cpp
 
 CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.i: cmake_force
@@ -113,20 +127,6 @@ CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.i: cmake_force
 CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/taehosim/Dev/Study/VC_MyOpenGL/imgui/imgui_widgets.cpp -o CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.s
-
-CMakeFiles/imgui.dir/imgui/imgui.cpp.o: CMakeFiles/imgui.dir/flags.make
-CMakeFiles/imgui.dir/imgui/imgui.cpp.o: /Users/taehosim/Dev/Study/VC_MyOpenGL/imgui/imgui.cpp
-CMakeFiles/imgui.dir/imgui/imgui.cpp.o: CMakeFiles/imgui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/imgui.dir/imgui/imgui.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui.dir/imgui/imgui.cpp.o -MF CMakeFiles/imgui.dir/imgui/imgui.cpp.o.d -o CMakeFiles/imgui.dir/imgui/imgui.cpp.o -c /Users/taehosim/Dev/Study/VC_MyOpenGL/imgui/imgui.cpp
-
-CMakeFiles/imgui.dir/imgui/imgui.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/imgui.dir/imgui/imgui.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/taehosim/Dev/Study/VC_MyOpenGL/imgui/imgui.cpp > CMakeFiles/imgui.dir/imgui/imgui.cpp.i
-
-CMakeFiles/imgui.dir/imgui/imgui.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/imgui/imgui.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/taehosim/Dev/Study/VC_MyOpenGL/imgui/imgui.cpp -o CMakeFiles/imgui.dir/imgui/imgui.cpp.s
 
 CMakeFiles/imgui.dir/imgui/imgui_impl_glfw.cpp.o: CMakeFiles/imgui.dir/flags.make
 CMakeFiles/imgui.dir/imgui/imgui_impl_glfw.cpp.o: /Users/taehosim/Dev/Study/VC_MyOpenGL/imgui/imgui_impl_glfw.cpp
@@ -158,20 +158,20 @@ CMakeFiles/imgui.dir/imgui/imgui_impl_opengl3.cpp.s: cmake_force
 
 # Object files for target imgui
 imgui_OBJECTS = \
+"CMakeFiles/imgui.dir/imgui/imgui.cpp.o" \
 "CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o" \
 "CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o" \
 "CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o" \
-"CMakeFiles/imgui.dir/imgui/imgui.cpp.o" \
 "CMakeFiles/imgui.dir/imgui/imgui_impl_glfw.cpp.o" \
 "CMakeFiles/imgui.dir/imgui/imgui_impl_opengl3.cpp.o"
 
 # External object files for target imgui
 imgui_EXTERNAL_OBJECTS =
 
+libimgui.a: CMakeFiles/imgui.dir/imgui/imgui.cpp.o
 libimgui.a: CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o
 libimgui.a: CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o
 libimgui.a: CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o
-libimgui.a: CMakeFiles/imgui.dir/imgui/imgui.cpp.o
 libimgui.a: CMakeFiles/imgui.dir/imgui/imgui_impl_glfw.cpp.o
 libimgui.a: CMakeFiles/imgui.dir/imgui/imgui_impl_opengl3.cpp.o
 libimgui.a: CMakeFiles/imgui.dir/build.make
