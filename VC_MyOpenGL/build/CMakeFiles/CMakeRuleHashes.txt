@@ -1,0 +1,11 @@
+# Hashes of file build rules.
+a110702b8560e6a50bd4d149b4f5bd5f CMakeFiles/dep-spdlog
+3b58146a6a046e63309d9e1accb69566 CMakeFiles/dep-spdlog-complete
+1b7c96b2bc97ea73f75d5953cc1d0373 dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-build
+5dd0fead059d9402b2a8e3ca3dfbb73e dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-configure
+2607aead1708e0cf2b547a240f1fcb21 dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-download
+556908cccaca9672d5b330ecc5af5175 dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-install
+4be6736d1fbbb97699c0f373167182a6 dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-mkdir
+5e81c10ea2d659686368371f8f4fe168 dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-patch
+b020096623ec448e619b2fb51b24487c dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-test
+638fad439f9a8614c822b29faee76142 dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-update

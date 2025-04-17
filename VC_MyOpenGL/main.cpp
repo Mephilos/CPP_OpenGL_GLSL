@@ -16,7 +16,7 @@
 const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
 
-Camera camera(glm::vec3(0.0f, 0.0f, 3.0f));
+Camera camera(glm::vec3(0.0f, 1.0f, 5.0f));
 float lastX = SCR_WIDTH / 2.0f;
 float lastY = SCR_HEIGHT / 2.0f;
 bool firstMouse = true;
@@ -105,12 +105,12 @@ int main()
     glEnable(GL_DEPTH_TEST);
 
     std::vector<std::string> skyboxFaces = {
-        "resources/skybox/right.bmp",   // +X 방향 텍스처
-        "resources/skybox/left.bmp",    // -X 방향 텍스처
-        "resources/skybox/Top.bmp",     // +Y 방향 텍스처
-        "resources/skybox/Bottom_.jpg",  // -Y 방향 텍스처
-        "resources/skybox/front.bmp",   // +Z 방향 텍스처
-        "resources/skybox/back.bmp"     // -Z 방향 텍스처
+        "resources/skybox/right.jpg",   // +X 방향 텍스처
+        "resources/skybox/left.jpg",    // -X 방향 텍스처
+        "resources/skybox/top.jpg",     // +Y 방향 텍스처
+        "resources/skybox/bottom.jpg",  // -Y 방향 텍스처
+        "resources/skybox/front.jpg",   // +Z 방향 텍스처
+        "resources/skybox/back.jpg"     // -Z 방향 텍스처
     };
     
     //스카이 박스

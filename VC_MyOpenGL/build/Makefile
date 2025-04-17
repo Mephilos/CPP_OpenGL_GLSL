@@ -117,19 +117,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named glad
-
-# Build rule for target.
-glad: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glad
-.PHONY : glad
-
-# fast build rule for target.
-glad/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/build
-.PHONY : glad/fast
-
-#=============================================================================
 # Target rules for targets named _OpenGL
 
 # Build rule for target.
@@ -141,6 +128,32 @@ _OpenGL: cmake_check_build_system
 _OpenGL/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/_OpenGL.dir/build.make CMakeFiles/_OpenGL.dir/build
 .PHONY : _OpenGL/fast
+
+#=============================================================================
+# Target rules for targets named dep-spdlog
+
+# Build rule for target.
+dep-spdlog: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep-spdlog
+.PHONY : dep-spdlog
+
+# fast build rule for target.
+dep-spdlog/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dep-spdlog.dir/build.make CMakeFiles/dep-spdlog.dir/build
+.PHONY : dep-spdlog/fast
+
+#=============================================================================
+# Target rules for targets named glad
+
+# Build rule for target.
+glad: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glad
+.PHONY : glad
+
+# fast build rule for target.
+glad/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/build
+.PHONY : glad/fast
 
 glad/src/glad.o: glad/src/glad.c.o
 .PHONY : glad/src/glad.o
@@ -246,6 +259,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... dep-spdlog"
 	@echo "... _OpenGL"
 	@echo "... glad"
 	@echo "... glad/src/glad.o"

@@ -4,7 +4,7 @@
 # compile C with /usr/bin/clang
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/taehosim/Dev/Study/VC_MyOpenGL/glad/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL/include
+C_INCLUDES = -I/Users/taehosim/Dev/Study/VC_MyOpenGL/glad/include
 
 C_FLAGSarm64 = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk
 

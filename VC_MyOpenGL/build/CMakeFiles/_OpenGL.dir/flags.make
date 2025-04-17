@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/clang++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/taehosim/Dev/Study/VC_MyOpenGL/include -I/opt/homebrew/Cellar/glfw/3.4/include -I/opt/homebrew/Cellar/assimp/5.4.3/include -I/opt/homebrew/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL/glad/include
+CXX_INCLUDES = -I/Users/taehosim/Dev/Study/VC_MyOpenGL/build/install/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL/include -I/opt/homebrew/Cellar/glfw/3.4/include -I/opt/homebrew/Cellar/assimp/5.4.3/include -I/opt/homebrew/include -I/Users/taehosim/Dev/Study/VC_MyOpenGL/glad/include
 
 CXX_FLAGSarm64 = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk
 
