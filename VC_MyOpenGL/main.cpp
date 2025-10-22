@@ -28,6 +28,7 @@ float deltaTime = 0.0f;
 float lastFrame = 0.0f;
 
 glm::vec4 clearColor = glm::vec4(0.1f, 0.1f, 0.1f, 1.0f);
+bool showImGuiMouse = true; // New flag to toggle mouse visibility and control
 
 void framebufferSizeCallback(GLFWwindow* window, int width, int height)
 {
@@ -36,7 +37,7 @@ void framebufferSizeCallback(GLFWwindow* window, int width, int height)
 void mouseCallback(GLFWwindow* window, double xposIn, double yposIn)
 {
     ImGui_ImplGlfw_CursorPosCallback(window, xposIn, yposIn);
-    if (ImGui::GetIO().WantCaptureMouse) 
+    if (showImGuiMouse) // If mouse is visible for ImGui, don't process camera input
     {
         return;
     }
@@ -62,7 +63,7 @@ void mouseCallback(GLFWwindow* window, double xposIn, double yposIn)
 void scrollCallback(GLFWwindow* window, double xoffset, double yoffset)
 {
     ImGui_ImplGlfw_ScrollCallback(window, xoffset, yoffset);
-    if (ImGui::GetIO().WantCaptureMouse) 
+    if (showImGuiMouse) // If mouse is visible for ImGui, don't process camera input
     {
         return;
     }
@@ -72,10 +73,13 @@ void scrollCallback(GLFWwindow* window, double xoffset, double yoffset)
 void keyCallback(GLFWwindow* window, int key, int scancode, int action, int mods) 
 {
     ImGui_ImplGlfw_KeyCallback(window, key, scancode, action, mods);
-    if (ImGui::GetIO().WantCaptureKeyboard) 
-    {
-        return;
+    
+    if (key == GLFW_KEY_TAB && action == GLFW_PRESS) {
+        showImGuiMouse = !showImGuiMouse;
+        // Update camera vectors if switching from UI to camera control, or vice versa
+        camera.updateCameraVectors(); 
     }
+
     if(key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
         glfwSetWindowShouldClose(window, true);
 }
@@ -91,7 +95,7 @@ void mouseButtonCallback(GLFWwindow* window, int button, int action, int mods)
 
 void processInput(GLFWwindow *window)
 {
-    if (ImGui::GetIO().WantCaptureKeyboard) 
+    if (showImGuiMouse) // If mouse is visible for ImGui, don't process camera input
     {
         return;
     }
@@ -134,9 +138,6 @@ int main()
     glfwSetCharCallback(window, charCallback);
     glfwSetMouseButtonCallback(window, mouseButtonCallback);
 
-
-    //마우스 입력 모드(커서 보이지 않게)
-    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
     //glad형식에 glfw함수 로드
     if(!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
     {
@@ -236,7 +237,8 @@ int main()
         ImGui::End();
 
         // Conditional cursor handling
-        if (ImGui::GetIO().WantCaptureMouse) {
+        // printf("WantCaptureMouse: %d\n", wantCaptureMouse);
+        if (showImGuiMouse) {
             glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
         } else {
             glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
