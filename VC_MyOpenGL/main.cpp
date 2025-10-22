@@ -27,6 +27,8 @@ bool firstMouse = true;
 float deltaTime = 0.0f;
 float lastFrame = 0.0f;
 
+glm::vec4 clearColor = glm::vec4(0.1f, 0.1f, 0.1f, 1.0f);
+
 void framebufferSizeCallback(GLFWwindow* window, int width, int height)
 {
     glViewport(0,0, width, height);
@@ -158,7 +160,8 @@ int main()
     ImGui_ImplOpenGL3_CreateFontsTexture();
     ImGui_ImplOpenGL3_CreateDeviceObjects();
 
-    std::vector<std::string> skyboxFaces = {
+    std::vector<std::string> skyboxFaces = 
+    {
         "resources/skybox/right.jpg",   // +X 방향 텍스처
         "resources/skybox/left.jpg",    // -X 방향 텍스처
         "resources/skybox/top.jpg",     // +Y 방향 텍스처
@@ -203,16 +206,45 @@ int main()
         
         glfwPollEvents(); 
         
+        // Start the Dear ImGui frame
         ImGui_ImplOpenGL3_NewFrame();
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
-        ImGui::Begin("Hello, ImGui!");
-        ImGui::Text("This is some useful text.");
+
+        // ImGui rendering
+        ImGui::SetNextWindowSize(ImVec2(400, 300), ImGuiCond_FirstUseEver); // Set initial size
+        ImGui::Begin("UI Window");
+        if (ImGui::ColorEdit4("clear color", glm::value_ptr(clearColor))) {
+            glClearColor(clearColor.r, clearColor.g, clearColor.b, clearColor.a);
+        }
+        ImGui::Separator();
+        ImGui::DragFloat3("camera pos", glm::value_ptr(camera.Position), 0.01f);
+        ImGui::DragFloat("camera yaw", &camera.Yaw, 0.5f);
+        ImGui::DragFloat("camera pitch", &camera.Pitch, 0.5f, -89.0f, 89.0f);
+        ImGui::Separator();
+        static char buf[128] = "Hello, ImGui!";
+        ImGui::InputText("Input Text", buf, IM_ARRAYSIZE(buf));
+        ImGui::SameLine();
+        if (ImGui::Button("Reset")) { strcpy(buf, "Hello, ImGui!"); }
+        ImGui::Separator();
+        if (ImGui::Button("reset camera")) {
+            camera.Yaw = -90.0f; // Default yaw for front view
+            camera.Pitch = 0.0f;
+            camera.Position = glm::vec3(0.0f, 1.0f, 5.0f); // Default position
+            camera.updateCameraVectors();
+        }
         ImGui::End();
 
-        processInput(window);
+        // Conditional cursor handling
+        if (ImGui::GetIO().WantCaptureMouse) {
+            glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
+        } else {
+            glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+        }
 
-        glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
+        processInput(window); // Process input after ImGui frame, considering ImGui capture
+
+        glClearColor(clearColor.r, clearColor.g, clearColor.b, clearColor.a);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), 
@@ -226,18 +258,18 @@ int main()
         modelShader.setMat4("view", view);
         modelShader.setVec3("viewPos", camera.Position);
 
-        // Set light properties
+        
         modelShader.setVec3("light.position", lightPos);
         modelShader.setVec3("light.ambient", lightAmbient);
         modelShader.setVec3("light.diffuse", lightDiffuse);
         modelShader.setVec3("light.specular", lightSpecular);
 
-        // Set material properties
+        
         modelShader.setFloat("shininess", materialShininess);
-        // Bind default white texture for specular map if model doesn't provide one
-        glActiveTexture(GL_TEXTURE1); // Use texture unit 1 for specular map
+        
+        glActiveTexture(GL_TEXTURE1);
         glBindTexture(GL_TEXTURE_2D, defaultSpecularMap);
-        modelShader.setInt("texture_specular1", 1); // Tell shader to use texture unit 1 for specular map
+        modelShader.setInt("texture_specular1", 1);
 
         glm::mat4 model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));

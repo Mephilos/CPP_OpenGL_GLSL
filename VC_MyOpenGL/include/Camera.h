@@ -56,8 +56,7 @@ public:
     {
         return glm::lookAt(Position, Position + Front, Up);
     }
-
-     // processes input received from any keyboard-like input system. Accepts input parameter in the form of camera defined ENUM (to abstract it from windowing systems)
+    
      void ProcessKeyboard(Camera_Movement direction, float deltaTime)
      {
          float velocity = MovementSpeed * deltaTime;
@@ -70,7 +69,7 @@ public:
          if (direction == RIGHT)
              Position += Right * velocity;
      }
-     // processes input received from a mouse input system. Expects the offset value in both the x and y direction.
+
     void ProcessMouseMovement(float xoffset, float yoffset, GLboolean constrainPitch = true)
     {
         xoffset *= MouseSensitivity;
@@ -79,7 +78,6 @@ public:
         Yaw   += xoffset;
         Pitch += yoffset;
 
-        // make sure that when pitch is out of bounds, screen doesn't get flipped
         if (constrainPitch)
         {
             if (Pitch > 89.0f)
@@ -88,11 +86,10 @@ public:
                 Pitch = -89.0f;
         }
 
-        // update Front, Right and Up Vectors using the updated Euler angles
         updateCameraVectors();
     }
 
-    // processes input received from a mouse scroll-wheel event. Only requires input on the vertical wheel-axis
+    
     void ProcessMouseScroll(float yoffset)
     {
         Zoom -= (float)yoffset;
@@ -101,18 +98,18 @@ public:
         if (Zoom > 45.0f)
             Zoom = 45.0f;
     }
-private:
-    // calculates the front vector from the Camera's (updated) Euler Angles
+    
+    public:
     void updateCameraVectors()
     {
-        // calculate the new Front vector
+    
         glm::vec3 front;
         front.x = cos(glm::radians(Yaw)) * cos(glm::radians(Pitch));
         front.y = sin(glm::radians(Pitch));
         front.z = sin(glm::radians(Yaw)) * cos(glm::radians(Pitch));
         Front = glm::normalize(front);
-        // also re-calculate the Right and Up vector
-        Right = glm::normalize(glm::cross(Front, WorldUp));  // normalize the vectors, because their length gets closer to 0 the more you look up or down which results in slower movement.
+    
+        Right = glm::normalize(glm::cross(Front, WorldUp));
         Up    = glm::normalize(glm::cross(Right, Front));
     }
 };
