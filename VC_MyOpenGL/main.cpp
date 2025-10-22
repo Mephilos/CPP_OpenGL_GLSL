@@ -177,6 +177,23 @@ int main()
     //모델 준비
     Model myModel("resources/backpack/backpack.obj");
 
+    // Light properties
+    glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
+    glm::vec3 lightAmbient(0.2f, 0.2f, 0.2f);
+    glm::vec3 lightDiffuse(0.5f, 0.5f, 0.5f);
+    glm::vec3 lightSpecular(1.0f, 1.0f, 1.0f);
+
+    // Material properties (for now, a default shininess)
+    float materialShininess = 32.0f;
+
+    // Generate a default white texture for specular map if not provided by model
+    unsigned int defaultSpecularMap;
+    glGenTextures(1, &defaultSpecularMap);
+    glBindTexture(GL_TEXTURE_2D, defaultSpecularMap);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, 1, 1, 0, GL_RGB, GL_UNSIGNED_BYTE, new unsigned char[3]{255, 255, 255});
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
     while (!glfwWindowShouldClose(window))
     {
         float currentFrame = static_cast<float>(glfwGetTime());
@@ -207,6 +224,20 @@ int main()
         modelShader.use();
         modelShader.setMat4("projection", projection);
         modelShader.setMat4("view", view);
+        modelShader.setVec3("viewPos", camera.Position);
+
+        // Set light properties
+        modelShader.setVec3("light.position", lightPos);
+        modelShader.setVec3("light.ambient", lightAmbient);
+        modelShader.setVec3("light.diffuse", lightDiffuse);
+        modelShader.setVec3("light.specular", lightSpecular);
+
+        // Set material properties
+        modelShader.setFloat("shininess", materialShininess);
+        // Bind default white texture for specular map if model doesn't provide one
+        glActiveTexture(GL_TEXTURE1); // Use texture unit 1 for specular map
+        glBindTexture(GL_TEXTURE_2D, defaultSpecularMap);
+        modelShader.setInt("texture_specular1", 1); // Tell shader to use texture unit 1 for specular map
 
         glm::mat4 model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
@@ -223,6 +254,7 @@ int main()
     ImGui_ImplGlfw_Shutdown();
     ImGui::DestroyContext();
 
+    glDeleteTextures(1, &defaultSpecularMap);
     glfwTerminate();
     return 0;
 
