@@ -6,12 +6,13 @@ in vec3 Normal;
 in vec3 FragPos;
 
 uniform sampler2D texture_diffuse1;
-uniform sampler2D texture_specular1; // Assuming a specular map might exist
-uniform float shininess; // Material shininess
+uniform sampler2D texture_specular1;
+uniform float shininess; 
 
 uniform vec3 viewPos;
 
-struct Light {
+struct Light 
+{
     vec3 position;
     vec3 ambient;
     vec3 diffuse;
@@ -34,8 +35,8 @@ void main()
     vec3 viewDir = normalize(viewPos - FragPos);
     vec3 reflectDir = reflect(-lightDir, norm);
     float spec = pow(max(dot(viewDir, reflectDir), 0.0), shininess);
-    vec3 specular = light.specular * spec * texture(texture_specular1, TexCoords).rgb; // Use specular map if available
-    // If no specular map, you might use a fixed color: vec3(0.5, 0.5, 0.5)
+    vec3 specular = light.specular * spec * texture(texture_specular1, TexCoords).rgb; 
+    
 
     vec3 result = ambient + diffuse + specular;
     FragColor = vec4(result, 1.0);
