@@ -3,11 +3,11 @@
 
 cmake_minimum_required(VERSION ${CMAKE_VERSION}) # this file comes with cmake
 
-if(EXISTS "/Users/taehosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-gitclone-lastrun.txt" AND EXISTS "/Users/taehosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-gitinfo.txt" AND
-  "/Users/taehosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-gitclone-lastrun.txt" IS_NEWER_THAN "/Users/taehosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-gitinfo.txt")
+if(EXISTS "/Users/teahosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-gitclone-lastrun.txt" AND EXISTS "/Users/teahosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-gitinfo.txt" AND
+  "/Users/teahosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-gitclone-lastrun.txt" IS_NEWER_THAN "/Users/teahosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-gitinfo.txt")
   message(VERBOSE
     "Avoiding repeated git clone, stamp file is up to date: "
-    "'/Users/taehosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-gitclone-lastrun.txt'"
+    "'/Users/teahosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-gitclone-lastrun.txt'"
   )
   return()
 endif()
@@ -22,12 +22,12 @@ else()
 endif()
 
 execute_process(
-  COMMAND ${CMAKE_COMMAND} -E rm -rf "/Users/taehosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog"
+  COMMAND ${CMAKE_COMMAND} -E rm -rf "/Users/teahosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog"
   RESULT_VARIABLE error_code
   ${maybe_show_command}
 )
 if(error_code)
-  message(FATAL_ERROR "Failed to remove directory: '/Users/taehosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog'")
+  message(FATAL_ERROR "Failed to remove directory: '/Users/teahosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog'")
 endif()
 
 # try the clone 3 times in case there is an odd git clone issue
@@ -35,9 +35,9 @@ set(error_code 1)
 set(number_of_tries 0)
 while(error_code AND number_of_tries LESS 3)
   execute_process(
-    COMMAND "/usr/bin/git"
+    COMMAND "/opt/homebrew/bin/git"
             clone --no-checkout --depth 1 --no-single-branch --config "advice.detachedHead=false" "https://github.com/gabime/spdlog.git" "dep-spdlog"
-    WORKING_DIRECTORY "/Users/taehosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src"
+    WORKING_DIRECTORY "/Users/teahosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src"
     RESULT_VARIABLE error_code
     ${maybe_show_command}
   )
@@ -51,9 +51,9 @@ if(error_code)
 endif()
 
 execute_process(
-  COMMAND "/usr/bin/git"
+  COMMAND "/opt/homebrew/bin/git"
           checkout "v1.x" --
-  WORKING_DIRECTORY "/Users/taehosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog"
+  WORKING_DIRECTORY "/Users/teahosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog"
   RESULT_VARIABLE error_code
   ${maybe_show_command}
 )
@@ -64,24 +64,24 @@ endif()
 set(init_submodules TRUE)
 if(init_submodules)
   execute_process(
-    COMMAND "/usr/bin/git" 
+    COMMAND "/opt/homebrew/bin/git" 
             submodule update --recursive --init 
-    WORKING_DIRECTORY "/Users/taehosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog"
+    WORKING_DIRECTORY "/Users/teahosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog"
     RESULT_VARIABLE error_code
     ${maybe_show_command}
   )
 endif()
 if(error_code)
-  message(FATAL_ERROR "Failed to update submodules in: '/Users/taehosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog'")
+  message(FATAL_ERROR "Failed to update submodules in: '/Users/teahosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog'")
 endif()
 
 # Complete success, update the script-last-run stamp file:
 #
 execute_process(
-  COMMAND ${CMAKE_COMMAND} -E copy "/Users/taehosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-gitinfo.txt" "/Users/taehosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-gitclone-lastrun.txt"
+  COMMAND ${CMAKE_COMMAND} -E copy "/Users/teahosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-gitinfo.txt" "/Users/teahosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-gitclone-lastrun.txt"
   RESULT_VARIABLE error_code
   ${maybe_show_command}
 )
 if(error_code)
-  message(FATAL_ERROR "Failed to copy script-last-run stamp file: '/Users/taehosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-gitclone-lastrun.txt'")
+  message(FATAL_ERROR "Failed to copy script-last-run stamp file: '/Users/teahosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-gitclone-lastrun.txt'")
 endif()

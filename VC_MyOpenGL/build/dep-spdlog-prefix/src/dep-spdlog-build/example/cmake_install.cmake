@@ -1,8 +1,8 @@
-# Install script for directory: /Users/taehosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog/example
+# Install script for directory: /Users/teahosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog/example
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/Users/taehosim/Dev/Study/VC_MyOpenGL/build/install")
+  set(CMAKE_INSTALL_PREFIX "/Users/teahosim/Dev/Study/VC_MyOpenGL/build/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -40,6 +40,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/taehosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-build/example/install_local_manifest.txt"
+  file(WRITE "/Users/teahosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-build/example/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

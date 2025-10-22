@@ -3,9 +3,9 @@
 # No other meaning or use of this file is supported.
 
 method=git
-command=/opt/homebrew/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/Users/taehosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/tmp/dep-spdlog-gitclone.cmake
-source_dir=/Users/taehosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog
-work_dir=/Users/taehosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src
+command=/opt/homebrew/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/Users/teahosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/tmp/dep-spdlog-gitclone.cmake
+source_dir=/Users/teahosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog
+work_dir=/Users/teahosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src
 repository=https://github.com/gabime/spdlog.git
 remote=origin
 init_submodules=TRUE

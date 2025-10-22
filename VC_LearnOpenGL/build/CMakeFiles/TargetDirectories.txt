@@ -1,4 +1,0 @@
-/Users/taehosim/Dev/Study/VC_LearnOpenGL/build/CMakeFiles/glad.dir
-/Users/taehosim/Dev/Study/VC_LearnOpenGL/build/CMakeFiles/_OpenGL.dir
-/Users/taehosim/Dev/Study/VC_LearnOpenGL/build/CMakeFiles/edit_cache.dir
-/Users/taehosim/Dev/Study/VC_LearnOpenGL/build/CMakeFiles/rebuild_cache.dir

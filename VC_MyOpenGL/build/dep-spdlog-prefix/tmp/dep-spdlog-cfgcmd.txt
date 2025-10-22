@@ -1,1 +1,1 @@
-cmd='/opt/homebrew/bin/cmake;-DCMAKE_INSTALL_PREFIX=/Users/taehosim/Dev/Study/VC_MyOpenGL/build/install;-GUnix Makefiles;-S;<SOURCE_DIR><SOURCE_SUBDIR>;-B;<BINARY_DIR>'
+cmd='/opt/homebrew/bin/cmake;-DCMAKE_INSTALL_PREFIX=/Users/teahosim/Dev/Study/VC_MyOpenGL/build/install;-GUnix Makefiles;-S;<SOURCE_DIR><SOURCE_SUBDIR>;-B;<BINARY_DIR>'
