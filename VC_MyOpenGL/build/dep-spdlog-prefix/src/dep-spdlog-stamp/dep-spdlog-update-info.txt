@@ -4,4 +4,4 @@
 
 command (connected)=
 command (disconnected)=
-work_dir=/Users/taehosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog
+work_dir=/Users/teahosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog

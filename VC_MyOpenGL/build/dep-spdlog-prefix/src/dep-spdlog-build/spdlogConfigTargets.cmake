@@ -7,7 +7,7 @@ if(CMAKE_VERSION VERSION_LESS "3.0.0")
    message(FATAL_ERROR "CMake >= 3.0.0 required")
 endif()
 cmake_policy(PUSH)
-cmake_policy(VERSION 3.0.0...3.30)
+cmake_policy(VERSION 3.0.0...3.31)
 #----------------------------------------------------------------
 # Generated CMake target import file.
 #----------------------------------------------------------------
@@ -51,7 +51,7 @@ add_library(spdlog::spdlog STATIC IMPORTED)
 
 set_target_properties(spdlog::spdlog PROPERTIES
   INTERFACE_COMPILE_DEFINITIONS "SPDLOG_COMPILED_LIB"
-  INTERFACE_INCLUDE_DIRECTORIES "/Users/taehosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog/include"
+  INTERFACE_INCLUDE_DIRECTORIES "/Users/teahosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog/include"
   INTERFACE_LINK_LIBRARIES "Threads::Threads"
 )
 
@@ -59,7 +59,7 @@ set_target_properties(spdlog::spdlog PROPERTIES
 add_library(spdlog::spdlog_header_only INTERFACE IMPORTED)
 
 set_target_properties(spdlog::spdlog_header_only PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/Users/taehosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog/include"
+  INTERFACE_INCLUDE_DIRECTORIES "/Users/teahosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog/include"
   INTERFACE_LINK_LIBRARIES "Threads::Threads"
 )
 
@@ -67,7 +67,7 @@ set_target_properties(spdlog::spdlog_header_only PROPERTIES
 set_property(TARGET spdlog::spdlog APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(spdlog::spdlog PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/Users/taehosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-build/libspdlog.a"
+  IMPORTED_LOCATION_RELEASE "/Users/teahosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-build/libspdlog.a"
   )
 
 # This file does not depend on other imported targets which have

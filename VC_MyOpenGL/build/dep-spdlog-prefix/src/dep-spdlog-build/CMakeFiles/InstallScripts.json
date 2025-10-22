@@ -1,8 +1,8 @@
 {
 	"InstallScripts" : 
 	[
-		"/Users/taehosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-build/cmake_install.cmake",
-		"/Users/taehosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-build/example/cmake_install.cmake"
+		"/Users/teahosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-build/cmake_install.cmake",
+		"/Users/teahosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-build/example/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

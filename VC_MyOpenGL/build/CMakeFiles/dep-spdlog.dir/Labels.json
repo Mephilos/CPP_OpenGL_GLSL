@@ -2,37 +2,37 @@
 	"sources" : 
 	[
 		{
-			"file" : "/Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles/dep-spdlog"
+			"file" : "/Users/teahosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles/dep-spdlog"
 		},
 		{
-			"file" : "/Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles/dep-spdlog.rule"
+			"file" : "/Users/teahosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles/dep-spdlog.rule"
 		},
 		{
-			"file" : "/Users/taehosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles/dep-spdlog-complete.rule"
+			"file" : "/Users/teahosim/Dev/Study/VC_MyOpenGL/build/CMakeFiles/dep-spdlog-complete.rule"
 		},
 		{
-			"file" : "/Users/taehosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-build.rule"
+			"file" : "/Users/teahosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-build.rule"
 		},
 		{
-			"file" : "/Users/taehosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-configure.rule"
+			"file" : "/Users/teahosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-configure.rule"
 		},
 		{
-			"file" : "/Users/taehosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-download.rule"
+			"file" : "/Users/teahosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-download.rule"
 		},
 		{
-			"file" : "/Users/taehosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-install.rule"
+			"file" : "/Users/teahosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-install.rule"
 		},
 		{
-			"file" : "/Users/taehosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-mkdir.rule"
+			"file" : "/Users/teahosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-mkdir.rule"
 		},
 		{
-			"file" : "/Users/taehosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-patch.rule"
+			"file" : "/Users/teahosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-patch.rule"
 		},
 		{
-			"file" : "/Users/taehosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-test.rule"
+			"file" : "/Users/teahosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-test.rule"
 		},
 		{
-			"file" : "/Users/taehosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-update.rule"
+			"file" : "/Users/teahosim/Dev/Study/VC_MyOpenGL/build/dep-spdlog-prefix/src/dep-spdlog-stamp/dep-spdlog-update.rule"
 		}
 	],
 	"target" : 
