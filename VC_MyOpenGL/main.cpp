@@ -12,9 +12,12 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
+#include <imgui.h>
+#include <imgui_impl_glfw.h>
+#include <imgui_impl_opengl3.h>
 
-const unsigned int SCR_WIDTH = 800;
-const unsigned int SCR_HEIGHT = 600;
+const int SCR_WIDTH = 800;
+const int SCR_HEIGHT = 600;
 
 Camera camera(glm::vec3(0.0f, 1.0f, 5.0f));
 float lastX = SCR_WIDTH / 2.0f;
@@ -30,6 +33,12 @@ void framebufferSizeCallback(GLFWwindow* window, int width, int height)
 }
 void mouseCallback(GLFWwindow* window, double xposIn, double yposIn)
 {
+    ImGui_ImplGlfw_CursorPosCallback(window, xposIn, yposIn);
+    if (ImGui::GetIO().WantCaptureMouse) 
+    {
+        return;
+    }
+
     float xpos = static_cast<float>(xposIn);
     float ypos = static_cast<float>(yposIn);
 
@@ -50,12 +59,40 @@ void mouseCallback(GLFWwindow* window, double xposIn, double yposIn)
 }
 void scrollCallback(GLFWwindow* window, double xoffset, double yoffset)
 {
+    ImGui_ImplGlfw_ScrollCallback(window, xoffset, yoffset);
+    if (ImGui::GetIO().WantCaptureMouse) 
+    {
+        return;
+    }
     camera.ProcessMouseScroll(static_cast<float>(yoffset));
 }
+
+void keyCallback(GLFWwindow* window, int key, int scancode, int action, int mods) 
+{
+    ImGui_ImplGlfw_KeyCallback(window, key, scancode, action, mods);
+    if (ImGui::GetIO().WantCaptureKeyboard) 
+    {
+        return;
+    }
+    if(key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
+        glfwSetWindowShouldClose(window, true);
+}
+
+void charCallback(GLFWwindow* window, unsigned int c) {
+    ImGui_ImplGlfw_CharCallback(window, c);
+}
+
+void mouseButtonCallback(GLFWwindow* window, int button, int action, int mods) 
+{
+    ImGui_ImplGlfw_MouseButtonCallback(window, button, action, mods);
+}
+
 void processInput(GLFWwindow *window)
 {
-    if(glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
-        glfwSetWindowShouldClose(window, true);
+    if (ImGui::GetIO().WantCaptureKeyboard) 
+    {
+        return;
+    }
 
     if(glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
         camera.ProcessKeyboard( FORWARD, deltaTime);
@@ -91,6 +128,10 @@ int main()
     glfwSetCursorPosCallback(window, mouseCallback);
     //OpenGL 창에 스크롤 기능 세팅
     glfwSetScrollCallback(window, scrollCallback);
+    glfwSetKeyCallback(window, keyCallback);
+    glfwSetCharCallback(window, charCallback);
+    glfwSetMouseButtonCallback(window, mouseButtonCallback);
+
 
     //마우스 입력 모드(커서 보이지 않게)
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
@@ -103,6 +144,19 @@ int main()
     //모델링 로드 텍스처 y축으로 반전
     //깊이 버퍼 활성화
     glEnable(GL_DEPTH_TEST);
+
+    IMGUI_CHECKVERSION();
+    ImGui::CreateContext();
+    ImGuiIO& io = ImGui::GetIO(); (void)io;
+    io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;
+    io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;
+
+    ImGui::StyleColorsDark();
+
+    ImGui_ImplGlfw_InitForOpenGL(window, false);
+    ImGui_ImplOpenGL3_Init("#version 330");
+    ImGui_ImplOpenGL3_CreateFontsTexture();
+    ImGui_ImplOpenGL3_CreateDeviceObjects();
 
     std::vector<std::string> skyboxFaces = {
         "resources/skybox/right.jpg",   // +X 방향 텍스처
@@ -128,7 +182,17 @@ int main()
         float currentFrame = static_cast<float>(glfwGetTime());
         deltaTime = currentFrame - lastFrame; //시작시 last frame은 0.0f
         lastFrame = currentFrame; //lastFrame 갱신
+
         
+        glfwPollEvents(); 
+        
+        ImGui_ImplOpenGL3_NewFrame();
+        ImGui_ImplGlfw_NewFrame();
+        ImGui::NewFrame();
+        ImGui::Begin("Hello, ImGui!");
+        ImGui::Text("This is some useful text.");
+        ImGui::End();
+
         processInput(window);
 
         glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
@@ -149,10 +213,15 @@ int main()
         model = glm::scale(model, glm::vec3(1.0f, 1.0f, 1.0f));
         modelShader.setMat4("model", model);
         myModel.Draw(modelShader);
-    
+        ImGui::Render();
+        ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+
         glfwSwapBuffers(window);
-        glfwPollEvents();
     }
+
+    ImGui_ImplOpenGL3_Shutdown();
+    ImGui_ImplGlfw_Shutdown();
+    ImGui::DestroyContext();
 
     glfwTerminate();
     return 0;

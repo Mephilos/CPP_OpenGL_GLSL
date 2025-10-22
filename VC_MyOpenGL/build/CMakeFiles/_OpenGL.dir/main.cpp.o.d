@@ -1163,4 +1163,9 @@ CMakeFiles/_OpenGL.dir/main.cpp.o: \
   /opt/homebrew/include/glm/gtc/../mat3x4.hpp \
   /opt/homebrew/include/glm/gtc/../mat4x2.hpp \
   /opt/homebrew/include/glm/gtc/../mat4x3.hpp \
-  /opt/homebrew/include/glm/gtc/type_ptr.inl
+  /opt/homebrew/include/glm/gtc/type_ptr.inl \
+  /Users/teahosim/Dev/Study/VC_MyOpenGL/imgui/imgui.h \
+  /Users/teahosim/Dev/Study/VC_MyOpenGL/imgui/imconfig.h \
+  /Users/teahosim/Dev/Study/VC_MyOpenGL/imgui/imgui_impl_glfw.h \
+  /Users/teahosim/Dev/Study/VC_MyOpenGL/imgui/imgui_impl_opengl3.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/TargetConditionals.h
